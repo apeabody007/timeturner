@@ -3,21 +3,31 @@
 **A menu bar hourglass for the Mac. The sand drains over the current clock
 hour, and at the top of every hour the glass turns itself over.**
 
-There are two views of the same hour. The menu bar icon is a tiny glass that
-drains and does a 180 degree turn on the hour. And there is a resizable
-window holding an hourglass built entirely out of keyboard characters: the
-frame is `=` `/` `\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and the
-grains fall through the neck one at a time on the real clock, piling up in a
-cone below. Resize the window and the glass reshapes itself to fit, the sand tumbling
-into the new shape. A thin countdown under the glass shows how much of the
-hour is left.
+<img src="docs/demo.gif" width="340" alt="The TimeTurner window: an hourglass drawn in keyboard characters, its sand draining grain by grain to 0:00, then turning over and starting the hour again">
 
-No dock icon, no settings beyond Launch at Login. About 600 lines of Swift.
-Builds with the Xcode Command Line Tools alone, so you do not need a 12 GB
-Xcode install to compile it.
+The whole thing is drawn out of keyboard characters. The frame is `=` `/`
+`\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and every grain is real: a
+falling-sand simulation drops them through the neck one at a time on the
+actual clock, so the top bulb takes the full hour to empty. The demo above is
+running at thirty-second hours; the real thing is slower and, honestly,
+better company.
 
-Click the menu bar hourglass to see how long until the next turn, or to
-reopen the window.
+There are two views of the same hour:
+
+- **The menu bar glass.** A tiny hourglass that visibly drains across the
+  hour and does a smooth 180 degree turn at the top of it. Click it for how
+  long until the next turn, Launch at Login, and the window.
+
+  <img src="docs/icon-hour.png" alt="The menu bar icon through one hour: full top bulb, draining, drained, then three frames of the glass rotating over">
+
+- **The glass window.** Resizable; the glass reshapes itself to fit, and the
+  sand physically tumbles into the new shape rather than teleporting. A thin
+  countdown under the glass shows how much of the hour is left. Close it and
+  the menu bar keeps the time alone.
+
+No dock icon, no settings beyond Launch at Login. About 650 lines of Swift,
+no dependencies. Builds with the Xcode Command Line Tools alone, so you do
+not need a 12 GB Xcode install to compile it.
 
 ## Install
 
@@ -39,7 +49,23 @@ Note that it ad-hoc signs, so macOS may ask you to approve it the first time.
 ```
 
 Demo mode compresses the hour into thirty seconds, so you can watch the sand
-drain and the glass flip.
+drain and the glass turn over.
+
+## How the sand works
+
+- Every grain lives in a character grid and obeys falling-sand rules: fall
+  straight down if you can, otherwise tumble diagonally. Piles come to rest
+  at a 45 degree angle, which is why the bottom builds a cone.
+- The neck is a gate wired to the clock. It releases grains only as the hour
+  says they are due, so the drain is not an animation of an hour, it is one.
+- Real sand keeps a level surface. In a wide window the funnel walls slope
+  shallower than the grains can tumble, so a leveling pass flows the top
+  chamber's high spots to its lowest hollows until the surface sits flat.
+- Resizing carries the sand along: each grain remembers where it sat as a
+  fraction of its chamber and is set back down as close to that spot as the
+  new glass allows, then the simulation settles the rest.
+- The state is derived from the current time, so the hourly turn, waking
+  from sleep, and a resize can all reseat the glass and it is never wrong.
 
 ## License
 
