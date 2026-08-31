@@ -39,7 +39,8 @@ final class GlassView: NSView {
         rebuild()
         timer = Timer.scheduledTimer(withTimeInterval: demo ? 0.05 : 0.1,
                                      repeats: true) { [weak self] _ in
-            self?.tick()
+            guard let self, self.window?.isVisible == true else { return }
+            self.step()
         }
     }
 
@@ -207,9 +208,7 @@ final class GlassView: NSView {
         return false
     }
 
-    private func tick() {
-        guard window?.isVisible == true else { return }
-
+    func step() {
         let cyc = cycleIndex()
         if cyc != cycle {
             cycle = cyc
@@ -248,6 +247,8 @@ final class GlassView: NSView {
             }
         }
 
+        levelTopChamber()
+
         // A little shimmer in the resting piles, so the sand reads as alive.
         for _ in 0..<2 {
             let r = Int.random(in: 1..<rows - 1)
@@ -255,6 +256,54 @@ final class GlassView: NSView {
             grid[r][c] = .sand(Self.grains.randomElement()!)
         }
         needsDisplay = true
+    }
+
+    // Real sand keeps a level surface. In a wide window the funnel walls
+    // slope shallower than the grains' 45 degree tumble, so sand would sit on
+    // the corner ledges forever; this pass lets the high spots flow sideways,
+    // a few grains a tick, until no column in the top chamber stands more
+    // than a grain above its neighbor.
+    private func levelTopChamber() {
+        guard waistRow > 2 else { return }
+        var surface = [Int?](repeating: nil, count: cols) // topmost sand row
+        var landing = [Int?](repeating: nil, count: cols) // where a grain would rest
+        for r in 1..<waistRow {
+            for c in interior[r] {
+                if case .sand = grid[r][c] {
+                    if surface[c] == nil { surface[c] = r }
+                } else if case .empty = grid[r][c], surface[c] == nil {
+                    landing[c] = r // deepest open cell above the column's sand
+                }
+            }
+        }
+
+        // Move the highest peak's top grain to the lowest hollow, a few
+        // grains a tick, until the whole surface is within a grain of flat.
+        var moves = 6
+        while moves > 0 {
+            var peak: Int? = nil
+            var hollow: Int? = nil
+            for c in (0..<cols).shuffled() {
+                if let s = surface[c], peak == nil || s < surface[peak!]! { peak = c }
+                if let l = landing[c], hollow == nil || l > landing[hollow!]! { hollow = c }
+            }
+            // Any strictly lower hollow is fair game: every move descends, so
+            // this terminates, and the surface settles truly flat.
+            guard let p = peak, let h = hollow, p != h,
+                  let s = surface[p], let land = landing[h], land >= s + 1 else { break }
+            grid[land][h] = grid[s][p]
+            grid[s][p] = .empty
+            surface[h] = land
+            landing[h] = land - 1 >= 1 && interior[land - 1].contains(h) ? land - 1 : nil
+            landing[p] = s
+            if s + 1 < waistRow, interior[s + 1].contains(p),
+               case .sand = grid[s + 1][p] {
+                surface[p] = s + 1
+            } else {
+                surface[p] = nil
+            }
+            moves -= 1
+        }
     }
 
     // MARK: - Drawing
