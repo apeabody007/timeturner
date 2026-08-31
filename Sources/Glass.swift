@@ -45,16 +45,23 @@ final class GlassView: NSView {
 
     override func setFrameSize(_ newSize: NSSize) {
         super.setFrameSize(newSize)
-        if cellSize.width > 1 { rebuild() }
+        guard cellSize.width > 1 else { return }
+        if grid.isEmpty { rebuild() } else { reshape() }
     }
 
     // MARK: - Building the glass
 
     // Rebuilds the walls for the current window size and reseats the sand to
-    // match the current point in the hour. Because the state is derived from
-    // the clock, a resize, a wake from sleep, and the hourly turn are all the
-    // same operation.
+    // match the current point in the hour. The hourly turn and a wake from
+    // sleep both come through here; a live resize goes through reshape()
+    // instead, so the sand tumbles rather than teleporting.
     private func rebuild() {
+        buildWalls()
+        seed()
+        needsDisplay = true
+    }
+
+    private func buildWalls() {
         cols = max(Int(bounds.width / cellSize.width), 15)
         rows = max(Int(bounds.height / cellSize.height), 11)
         if cols % 2 == 0 { cols -= 1 } // odd width keeps the neck centered
@@ -94,9 +101,11 @@ final class GlassView: NSView {
             grid[r][rw] = .wall("\\")
             interior[r] = (lw + 1)..<rw
         }
+    }
 
-        // Seat the sand for this point in the hour. The top chamber fills from
-        // the neck up, the bottom pile grows as a cone from the floor.
+    // Seats the sand for this point in the hour. The top chamber fills from
+    // the neck up, the bottom pile grows as a cone from the floor.
+    private func seed() {
         var topCells: [(Int, Int)] = []
         for r in 1..<waistRow { for c in interior[r] { topCells.append((r, c)) } }
         topCells.sort {
@@ -112,6 +121,81 @@ final class GlassView: NSView {
         passed = min(total, Int(secondsIntoCycle() / period * Double(total)))
         for (r, c) in topCells.prefix(total - passed) { grid[r][c] = .sand(Self.grains.randomElement()!) }
         for (r, c) in bottomCells.prefix(passed) { grid[r][c] = .sand(Self.grains.randomElement()!) }
+    }
+
+    // MARK: - Resizing with the sand in place
+
+    // Carries the grains through a resize. Each grain remembers where it sat
+    // as a fraction of its chamber; after the walls are rebuilt it is put back
+    // down at the nearest open cell to that spot, and the simulation tumbles
+    // everything into the new shape. Grain counts rescale with the new
+    // capacity so the hour keeps its meaning.
+    private func reshape() {
+        let oldWaist = waistRow, oldRows = rows, oldCols = cols, oldNeck = neckCol
+        let oldHalfW = max(Double(oldCols - 3) / 2, 1)
+        var tops: [(ny: Double, nx: Double)] = []
+        var bots: [(ny: Double, nx: Double)] = []
+        for r in 0..<oldRows {
+            for c in 0..<oldCols {
+                guard case .sand = grid[r][c] else { continue }
+                let nx = Double(c - oldNeck) / oldHalfW
+                if r < oldWaist {
+                    tops.append((Double(r - 1) / Double(max(oldWaist - 2, 1)), nx))
+                } else {
+                    bots.append((Double(r - oldWaist - 1) / Double(max(oldRows - 3 - oldWaist, 1)), nx))
+                }
+            }
+        }
+
+        buildWalls()
+
+        total = (1..<waistRow).reduce(0) { $0 + interior[$1].count }
+        passed = min(total, Int(secondsIntoCycle() / period * Double(total)))
+
+        // Trim or pad each chamber's grains to the new capacity's share.
+        func fit(_ grains: [(ny: Double, nx: Double)], to n: Int) -> [(ny: Double, nx: Double)] {
+            var out = Array(grains.shuffled().prefix(n))
+            while out.count < n { out.append(grains.randomElement() ?? (0, 0)) }
+            return out
+        }
+
+        func place(_ grains: [(ny: Double, nx: Double)], rowRange: Range<Int>) {
+            let newHalfW = max(Double(cols - 3) / 2, 1)
+            var homeless = 0
+            for g in grains {
+                let span = max(rowRange.count - 1, 1)
+                let r0 = rowRange.lowerBound
+                    + min(span, max(0, Int((g.ny * Double(span)).rounded())))
+                let c0 = neckCol + Int((g.nx * newHalfW).rounded())
+                var placed = false
+                // The spot itself, else straight up from it: sand stacks, then
+                // the simulation topples it.
+                for r in stride(from: r0, through: rowRange.lowerBound, by: -1) {
+                    guard !interior[r].isEmpty else { continue }
+                    let c = min(max(c0, interior[r].lowerBound), interior[r].upperBound - 1)
+                    if case .empty = grid[r][c] {
+                        grid[r][c] = .sand(Self.grains.randomElement()!)
+                        placed = true
+                        break
+                    }
+                }
+                if !placed { homeless += 1 }
+            }
+            if homeless > 0 {
+                var free: [(Int, Int)] = []
+                for r in rowRange {
+                    for c in interior[r] {
+                        if case .empty = grid[r][c] { free.append((r, c)) }
+                    }
+                }
+                for (r, c) in free.shuffled().prefix(homeless) {
+                    grid[r][c] = .sand(Self.grains.randomElement()!)
+                }
+            }
+        }
+
+        place(fit(tops, to: total - passed), rowRange: 1..<waistRow)
+        place(fit(bots, to: passed), rowRange: (waistRow + 1)..<(rows - 1))
         needsDisplay = true
     }
 
