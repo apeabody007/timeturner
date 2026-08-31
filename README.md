@@ -8,7 +8,9 @@ drains and does a 180 degree turn on the hour. And there is a resizable
 window holding an hourglass built entirely out of keyboard characters: the
 frame is `=` `/` `\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and the
 grains fall through the neck one at a time on the real clock, piling up in a
-cone below. Resize the window and the glass reshapes itself to fit.
+cone below. Resize the window and the glass reshapes itself to fit, the sand tumbling
+into the new shape. A thin countdown under the glass shows how much of the
+hour is left.
 
 No dock icon, no settings beyond Launch at Login. About 600 lines of Swift.
 Builds with the Xcode Command Line Tools alone, so you do not need a 12 GB

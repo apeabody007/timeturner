@@ -27,6 +27,11 @@ final class GlassView: NSView {
     private let font = NSFont.monospacedSystemFont(ofSize: 14, weight: .regular)
     private var cellSize = CGSize(width: 8, height: 16)
 
+    // The countdown under the glass: how much of the hour is left before the
+    // turn, in thin monospaced digits so the ticking doesn't jitter.
+    private let timeStrip: CGFloat = 44
+    private let timeFont = NSFont.monospacedDigitSystemFont(ofSize: 27, weight: .ultraLight)
+
     private static let grains: [Character] = [".", ".", ".", ":", ":", ";", ",", "*", "o"]
 
     override var isFlipped: Bool { true }
@@ -64,7 +69,7 @@ final class GlassView: NSView {
 
     private func buildWalls() {
         cols = max(Int(bounds.width / cellSize.width), 15)
-        rows = max(Int(bounds.height / cellSize.height), 11)
+        rows = max(Int((bounds.height - timeStrip) / cellSize.height), 11)
         if cols % 2 == 0 { cols -= 1 } // odd width keeps the neck centered
         waistRow = rows / 2
         neckCol = cols / 2
@@ -319,7 +324,7 @@ final class GlassView: NSView {
             [.font: font, .foregroundColor: NSColor.labelColor]
 
         let x0 = (bounds.width - CGFloat(cols) * cellSize.width) / 2
-        let y0 = (bounds.height - CGFloat(rows) * cellSize.height) / 2
+        let y0 = (bounds.height - timeStrip - CGFloat(rows) * cellSize.height) / 2
         for r in 0..<rows {
             let line = NSMutableAttributedString()
             for c in 0..<cols {
@@ -331,5 +336,16 @@ final class GlassView: NSView {
             }
             line.draw(at: NSPoint(x: x0, y: y0 + CGFloat(r) * cellSize.height))
         }
+
+        // The countdown, centered in the strip under the glass.
+        let remaining = max(0, period - secondsIntoCycle())
+        let text = String(format: "%d:%02d", Int(remaining) / 60, Int(remaining) % 60)
+        let attrs: [NSAttributedString.Key: Any] =
+            [.font: timeFont, .foregroundColor: NSColor.labelColor]
+        let size = text.size(withAttributes: attrs)
+        let stripTop = y0 + CGFloat(rows) * cellSize.height
+        text.draw(at: NSPoint(x: (bounds.width - size.width) / 2,
+                              y: stripTop + (timeStrip - size.height) / 2),
+                  withAttributes: attrs)
     }
 }
