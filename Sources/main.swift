@@ -162,11 +162,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var turning: Timer?
     private var lastCycle = cycleIndex()
     private var lastDrawnFraction = -1.0
+    private var glassWindow: NSWindow?
 
     func applicationDidFinishLaunching(_ note: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         buildMenu()
         draw(fraction: secondsIntoCycle() / period, angle: 0)
+        showGlass()
 
         tick = Timer.scheduledTimer(withTimeInterval: demo ? 0.25 : 1.0,
                                     repeats: true) { [weak self] _ in
@@ -224,6 +226,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(statusLine)
         menu.addItem(.separator())
 
+        let show = NSMenuItem(title: "Show the Hourglass",
+                              action: #selector(showGlass), keyEquivalent: "")
+        show.target = self
+        menu.addItem(show)
+
         loginItem = NSMenuItem(title: "Launch at Login",
                                action: #selector(toggleLogin), keyEquivalent: "")
         loginItem.target = self
@@ -250,6 +257,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                 : "Turns in \(minutes) minutes, at \(formatter.string(from: Date().addingTimeInterval(remaining)))"
         }
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
+    }
+
+    @objc private func showGlass() {
+        if glassWindow == nil {
+            let w = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 340, height: 480),
+                             styleMask: [.titled, .closable, .miniaturizable, .resizable],
+                             backing: .buffered, defer: false)
+            w.title = "TimeTurner"
+            w.minSize = NSSize(width: 220, height: 300)
+            w.isReleasedWhenClosed = false
+            w.contentView = GlassView()
+            w.setFrameAutosaveName("TimeTurnerGlass")
+            if w.frame.origin == .zero { w.center() }
+            glassWindow = w
+        }
+        glassWindow?.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
     }
 
     @objc private func toggleLogin() {

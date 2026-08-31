@@ -3,11 +3,19 @@
 **A menu bar hourglass for the Mac. The sand drains over the current clock
 hour, and at the top of every hour the glass turns itself over.**
 
-No dock icon, no windows, no settings beyond Launch at Login. One menu bar
-item, about 250 lines of Swift. Builds with the Xcode Command Line Tools
-alone, so you do not need a 12 GB Xcode install to compile it.
+There are two views of the same hour. The menu bar icon is a tiny glass that
+drains and does a 180 degree turn on the hour. And there is a resizable
+window holding an hourglass built entirely out of keyboard characters: the
+frame is `=` `/` `\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and the
+grains fall through the neck one at a time on the real clock, piling up in a
+cone below. Resize the window and the glass reshapes itself to fit.
 
-Click the hourglass to see how long until the next turn.
+No dock icon, no settings beyond Launch at Login. About 600 lines of Swift.
+Builds with the Xcode Command Line Tools alone, so you do not need a 12 GB
+Xcode install to compile it.
+
+Click the menu bar hourglass to see how long until the next turn, or to
+reopen the window.
 
 ## Install
 
