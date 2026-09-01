@@ -34,7 +34,7 @@ like everything else here, so there is nothing to start and no state to
 lose: you join the pomodoro already in progress, the way you would join the
 hour.
 
-<img src="docs/pomodoro-break.png" width="300" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
+<img src="docs/pomodoro-break.png" width="270" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
 
 Work runs the usual sand. Breaks run different sand, wavy `~` and `-`
 grains, with a dimmed countdown and a lighter menu bar glass, so one glance
