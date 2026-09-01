@@ -266,6 +266,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         show.target = self
         menu.addItem(show)
 
+        let size = NSMenuItem(title: "Default Size",
+                              action: #selector(defaultSize), keyEquivalent: "")
+        size.target = self
+        menu.addItem(size)
+
         pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
                                   action: #selector(togglePomodoro), keyEquivalent: "")
         pomodoroItem.target = self
@@ -306,6 +311,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     // Flipping the mode changes the phase's cycle number, so the icon's turn
     // animation and the window's reseed both follow on the next tick without
     // any further plumbing.
+    // Glides the window back to the ideal glass, center anchored. The
+    // animated resize runs through the same reshape path as a drag, so the
+    // sand sloshes home rather than jumping.
+    @objc private func defaultSize() {
+        showGlass()
+        guard let w = glassWindow else { return }
+        let ideal = w.frameRect(forContentRect:
+            NSRect(origin: .zero, size: GlassView.idealContentSize()))
+        let old = w.frame
+        let frame = NSRect(x: old.midX - ideal.width / 2,
+                           y: old.midY - ideal.height / 2,
+                           width: ideal.width, height: ideal.height)
+        w.setFrame(frame, display: true, animate: true)
+    }
+
     @objc private func togglePomodoro() {
         pomodoro.toggle()
         UserDefaults.standard.set(pomodoro, forKey: "pomodoro")
