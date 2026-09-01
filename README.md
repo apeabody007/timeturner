@@ -42,7 +42,9 @@ The app says so, too. Flip the mode on and *joined work :30 to :55* floats
 up under the neck of the glass and dissolves into the sand, and the window
 title becomes the slot itself, so the timetable is always on display.
 
+<p align="center">
 <img src="docs/pomodoro-break.png" width="270" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
+</p>
 
 Work runs the usual sand. Breaks run different sand, wavy `~` and `-`
 grains, with a dimmed countdown and a lighter menu bar glass, so one glance
