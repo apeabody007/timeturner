@@ -24,12 +24,14 @@ final class GlassView: NSView {
     private var cycle = currentPhase().cycle
     private var timer: Timer?
 
-    private let font = NSFont.monospacedSystemFont(ofSize: 14, weight: .regular)
+    private static let gridFont = NSFont.monospacedSystemFont(ofSize: 14, weight: .regular)
+    private let font = GlassView.gridFont
     private var cellSize = CGSize(width: 8, height: 16)
 
     // The countdown under the glass: how much of the hour is left before the
     // turn, in thin monospaced digits so the ticking doesn't jitter.
-    private let timeStrip: CGFloat = 56
+    private static let timeStrip: CGFloat = 56
+    private let timeStrip = GlassView.timeStrip
     private let timeFont = NSFont.monospacedDigitSystemFont(ofSize: 27, weight: .ultraLight)
 
     // Work sand and break sand are different materials.
@@ -39,13 +41,30 @@ final class GlassView: NSView {
         currentPhase().isBreak ? Self.breakGrains : Self.workGrains
     }
 
+    // The row pitch is tightened below the font's natural line height so the
+    // ink of consecutive \ and / wall glyphs actually meets; at full leading
+    // the diagonals read as disconnected dashes.
+    private static func cellMetrics() -> CGSize {
+        let probe = "0".size(withAttributes: [.font: gridFont])
+        return CGSize(width: probe.width, height: ceil(probe.height * 0.68))
+    }
+
+    // The glass looks best when the funnel walls step exactly one column per
+    // row: solid unbroken \ and / diagonals, no ledges. That happens when the
+    // grid is rows + 2 columns wide, so the default window size is derived
+    // from the font to land precisely on that geometry.
+    static func idealContentSize(rows: Int = 29) -> NSSize {
+        let cell = cellMetrics()
+        return NSSize(width: CGFloat(rows + 2) * cell.width + 1,
+                      height: CGFloat(rows) * cell.height + timeStrip + 1)
+    }
+
     override var isFlipped: Bool { true }
 
     override func viewDidMoveToWindow() {
         super.viewDidMoveToWindow()
         guard timer == nil else { return }
-        let probe = "0".size(withAttributes: [.font: font])
-        cellSize = CGSize(width: probe.width, height: ceil(probe.height))
+        cellSize = Self.cellMetrics()
         rebuild()
         timer = Timer.scheduledTimer(withTimeInterval: demo ? 0.05 : 0.1,
                                      repeats: true) { [weak self] _ in

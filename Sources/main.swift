@@ -313,15 +313,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
     @objc private func showGlass() {
         if glassWindow == nil {
-            let w = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 340, height: 480),
+            let w = NSWindow(contentRect: NSRect(origin: .zero, size: GlassView.idealContentSize()),
                              styleMask: [.titled, .closable, .miniaturizable, .resizable],
                              backing: .buffered, defer: false)
             w.title = "TimeTurner"
             w.minSize = NSSize(width: 220, height: 300)
             w.isReleasedWhenClosed = false
             w.contentView = GlassView()
-            w.setFrameAutosaveName("TimeTurnerGlass")
-            if w.frame.origin == .zero { w.center() }
+            w.center()
             glassWindow = w
         }
         glassWindow?.makeKeyAndOrderFront(nil)
