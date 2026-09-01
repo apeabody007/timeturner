@@ -49,6 +49,15 @@ struct Phase {
     let segment: Int            // 0-3 within the hour in pomodoro mode
 }
 
+// The slot's place on the clock, e.g. "work :30 to :55". The grid is the
+// same for everyone; this is what makes joining it visible.
+let slotStarts = [":00", ":25", ":30", ":55"]
+let slotEnds = [":25", ":30", ":55", ":00"]
+func slotLabel(_ p: Phase) -> String {
+    guard pomodoro else { return "" }
+    return "\(p.isBreak ? "break" : "work") \(slotStarts[p.segment]) to \(slotEnds[p.segment])"
+}
+
 func currentPhase(_ date: Date = Date()) -> Phase {
     let local = localSeconds(date)
     let hour = Int(local / period)
@@ -209,6 +218,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         draw(fraction: p.fraction, angle: 0)
         showGlass()
         updateNoise()
+        updateTitle()
+        if pomodoro {
+            (glassWindow?.contentView as? GlassView)?.announceJoin()
+        }
 
         tick = Timer.scheduledTimer(withTimeInterval: demo ? 0.25 : 1.0,
                                     repeats: true) { [weak self] _ in
@@ -224,6 +237,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             lastCycle = p.cycle
             startTurn()
             updateNoise()
+            updateTitle()
             return
         }
         // Redraw only when the sand has visibly moved, about 1% of the bulb.
@@ -352,6 +366,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         pomodoro.toggle()
         UserDefaults.standard.set(pomodoro, forKey: "pomodoro")
         updateNoise()
+        updateTitle()
+        if pomodoro {
+            (glassWindow?.contentView as? GlassView)?.announceJoin()
+        }
+    }
+
+    // In pomodoro mode the window title is the slot itself, so the clock
+    // grid is always on display.
+    private func updateTitle() {
+        let slot = slotLabel(currentPhase())
+        glassWindow?.title = slot.isEmpty
+            ? "TimeTurner"
+            : slot.prefix(1).uppercased() + slot.dropFirst()
     }
 
     // The noise follows the hour: full while the work sand runs, a whisper

@@ -34,6 +34,17 @@ final class GlassView: NSView {
     private let timeStrip = GlassView.timeStrip
     private let timeFont = NSFont.monospacedDigitSystemFont(ofSize: 27, weight: .ultraLight)
 
+    // The joining toast: shown when pomodoro mode comes on, so it is obvious
+    // you just stepped into a slot that was already running on the clock.
+    private var toast: String?
+    private var toastBorn = Date.distantPast
+
+    func announceJoin() {
+        toast = "joined \(slotLabel(currentPhase()))"
+        toastBorn = Date()
+        needsDisplay = true
+    }
+
     // Work sand and break sand are different materials.
     private static let workGrains: [Character] = [".", ".", ".", ":", ":", ";", ",", "*", "o"]
     private static let breakGrains: [Character] = ["~", "~", "~", "-", "-", ","]
@@ -375,6 +386,24 @@ final class GlassView: NSView {
         text.draw(at: NSPoint(x: (bounds.width - size.width) / 2,
                               y: stripTop + (timeStrip - size.height) / 2 - lift),
                   withAttributes: attrs)
+
+        // The joining toast, floating in the bottom bulb's airspace: holds
+        // for a moment, then dissolves.
+        if let message = toast {
+            let age = Date().timeIntervalSince(toastBorn)
+            let alpha = age < 2.5 ? 1.0 : max(0, 1 - (age - 2.5) / 1.5)
+            if alpha <= 0 {
+                toast = nil
+            } else {
+                let toastAttrs: [NSAttributedString.Key: Any] =
+                    [.font: NSFont.monospacedSystemFont(ofSize: 12, weight: .medium),
+                     .foregroundColor: NSColor.labelColor.withAlphaComponent(alpha)]
+                let mSize = message.size(withAttributes: toastAttrs)
+                message.draw(at: NSPoint(x: (bounds.width - mSize.width) / 2,
+                                         y: y0 + CGFloat(waistRow + 3) * cellSize.height),
+                             withAttributes: toastAttrs)
+            }
+        }
 
         // In pomodoro mode, the hour's two pomodoros as grains under the
         // digits: done *, running o, still to come .
