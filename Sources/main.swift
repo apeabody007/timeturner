@@ -192,6 +192,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var statusLine: NSMenuItem!
     private var loginItem: NSMenuItem!
     private var pomodoroItem: NSMenuItem!
+    private var sizeItem: NSMenuItem!
     private var tick: Timer?
     private var turning: Timer?
     private var lastCycle = currentPhase().cycle
@@ -266,10 +267,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         show.target = self
         menu.addItem(show)
 
-        let size = NSMenuItem(title: "Default Size",
+        sizeItem = NSMenuItem(title: "Default Size",
                               action: #selector(defaultSize), keyEquivalent: "")
-        size.target = self
-        menu.addItem(size)
+        sizeItem.target = self
+        menu.addItem(sizeItem)
 
         pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
                                   action: #selector(togglePomodoro), keyEquivalent: "")
@@ -306,6 +307,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         }
         pomodoroItem.state = pomodoro ? .on : .off
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
+        // Checked while the glass sits at its ideal size; a closed window
+        // counts, since it will open at the default.
+        if let content = glassWindow.map({ $0.contentRect(forFrameRect: $0.frame).size }),
+           glassWindow?.isVisible == true {
+            let ideal = GlassView.idealContentSize()
+            sizeItem.state = abs(content.width - ideal.width) <= 1
+                && abs(content.height - ideal.height) <= 1 ? .on : .off
+        } else {
+            sizeItem.state = .on
+        }
     }
 
     // Flipping the mode changes the phase's cycle number, so the icon's turn
