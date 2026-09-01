@@ -25,7 +25,24 @@ There are two views of the same hour:
   countdown under the glass shows how much of the hour is left. Close it and
   the menu bar keeps the time alone.
 
-No dock icon, no settings beyond Launch at Login. About 650 lines of Swift,
+## Pomodoro, with no start button
+
+Turn on **Pomodoro Mode** in the menu and the hour becomes the classic grid:
+25 minutes of work, 5 of break, twice per hour, turning at :00, :25, :30 and
+:55. Because 25 + 5 + 25 + 5 is exactly 60, the grid anchors to the clock
+like everything else here, so there is nothing to start and no state to
+lose: you join the pomodoro already in progress, the way you would join the
+hour.
+
+<img src="docs/pomodoro-break.png" width="300" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
+
+Work runs the usual sand. Breaks run different sand, wavy `~` and `-`
+grains, with a dimmed countdown and a lighter menu bar glass, so one glance
+says which side of the cycle the world is on. Two small grains under the
+countdown mark the hour's two pomodoros: done `*`, running `o`, still to
+come `.`.
+
+No dock icon, no settings beyond Launch at Login and Pomodoro Mode. About 650 lines of Swift,
 no dependencies. Builds with the Xcode Command Line Tools alone, so you do
 not need a 12 GB Xcode install to compile it.
 

@@ -19,9 +19,9 @@ final class GlassView: NSView {
     private var interior: [Range<Int>] = [] // open columns per row, inside the glass
     private var waistRow = 0
     private var neckCol = 0
-    private var total = 0   // grains in play this hour
+    private var total = 0   // grains in play this glass
     private var passed = 0  // grains that have gone through the neck
-    private var cycle = cycleIndex()
+    private var cycle = currentPhase().cycle
     private var timer: Timer?
 
     private let font = NSFont.monospacedSystemFont(ofSize: 14, weight: .regular)
@@ -29,10 +29,15 @@ final class GlassView: NSView {
 
     // The countdown under the glass: how much of the hour is left before the
     // turn, in thin monospaced digits so the ticking doesn't jitter.
-    private let timeStrip: CGFloat = 44
+    private let timeStrip: CGFloat = 56
     private let timeFont = NSFont.monospacedDigitSystemFont(ofSize: 27, weight: .ultraLight)
 
-    private static let grains: [Character] = [".", ".", ".", ":", ":", ";", ",", "*", "o"]
+    // Work sand and break sand are different materials.
+    private static let workGrains: [Character] = [".", ".", ".", ":", ":", ";", ",", "*", "o"]
+    private static let breakGrains: [Character] = ["~", "~", "~", "-", "-", ","]
+    private var grainSet: [Character] {
+        currentPhase().isBreak ? Self.breakGrains : Self.workGrains
+    }
 
     override var isFlipped: Bool { true }
 
@@ -124,9 +129,9 @@ final class GlassView: NSView {
         }
 
         total = topCells.count
-        passed = min(total, Int(secondsIntoCycle() / period * Double(total)))
-        for (r, c) in topCells.prefix(total - passed) { grid[r][c] = .sand(Self.grains.randomElement()!) }
-        for (r, c) in bottomCells.prefix(passed) { grid[r][c] = .sand(Self.grains.randomElement()!) }
+        passed = min(total, Int(currentPhase().fraction * Double(total)))
+        for (r, c) in topCells.prefix(total - passed) { grid[r][c] = .sand(grainSet.randomElement()!) }
+        for (r, c) in bottomCells.prefix(passed) { grid[r][c] = .sand(grainSet.randomElement()!) }
     }
 
     // MARK: - Resizing with the sand in place
@@ -156,7 +161,7 @@ final class GlassView: NSView {
         buildWalls()
 
         total = (1..<waistRow).reduce(0) { $0 + interior[$1].count }
-        passed = min(total, Int(secondsIntoCycle() / period * Double(total)))
+        passed = min(total, Int(currentPhase().fraction * Double(total)))
 
         // Trim or pad each chamber's grains to the new capacity's share.
         func fit(_ grains: [(ny: Double, nx: Double)], to n: Int) -> [(ny: Double, nx: Double)] {
@@ -180,7 +185,7 @@ final class GlassView: NSView {
                     guard !interior[r].isEmpty else { continue }
                     let c = min(max(c0, interior[r].lowerBound), interior[r].upperBound - 1)
                     if case .empty = grid[r][c] {
-                        grid[r][c] = .sand(Self.grains.randomElement()!)
+                        grid[r][c] = .sand(grainSet.randomElement()!)
                         placed = true
                         break
                     }
@@ -195,7 +200,7 @@ final class GlassView: NSView {
                     }
                 }
                 for (r, c) in free.shuffled().prefix(homeless) {
-                    grid[r][c] = .sand(Self.grains.randomElement()!)
+                    grid[r][c] = .sand(grainSet.randomElement()!)
                 }
             }
         }
@@ -214,13 +219,13 @@ final class GlassView: NSView {
     }
 
     func step() {
-        let cyc = cycleIndex()
+        let cyc = currentPhase().cycle
         if cyc != cycle {
             cycle = cyc
-            rebuild() // the turn: a fresh hour, top bulb full again
+            rebuild() // the turn: a fresh glass, top bulb full again
             return
         }
-        let expected = min(total, Int(secondsIntoCycle() / period * Double(total)))
+        let expected = min(total, Int(currentPhase().fraction * Double(total)))
         if expected - passed > 30 {
             rebuild() // slept through a stretch; reseat rather than fast-forward
             return
@@ -258,7 +263,7 @@ final class GlassView: NSView {
         for _ in 0..<2 {
             let r = Int.random(in: 1..<rows - 1)
             guard let c = interior[r].randomElement(), case .sand = grid[r][c] else { continue }
-            grid[r][c] = .sand(Self.grains.randomElement()!)
+            grid[r][c] = .sand(grainSet.randomElement()!)
         }
         needsDisplay = true
     }
@@ -337,15 +342,35 @@ final class GlassView: NSView {
             line.draw(at: NSPoint(x: x0, y: y0 + CGFloat(r) * cellSize.height))
         }
 
-        // The countdown, centered in the strip under the glass.
-        let remaining = max(0, period - secondsIntoCycle())
+        // The countdown, centered in the strip under the glass. Break time
+        // draws dimmer, so the color of the number is the color of the hour.
+        let p = currentPhase()
+        let remaining = max(0, p.remaining)
         let text = String(format: "%d:%02d", Int(remaining) / 60, Int(remaining) % 60)
         let attrs: [NSAttributedString.Key: Any] =
-            [.font: timeFont, .foregroundColor: NSColor.labelColor]
+            [.font: timeFont,
+             .foregroundColor: p.isBreak ? NSColor.secondaryLabelColor : NSColor.labelColor]
         let size = text.size(withAttributes: attrs)
         let stripTop = y0 + CGFloat(rows) * cellSize.height
+        let lift: CGFloat = pomodoro ? 7 : 0
         text.draw(at: NSPoint(x: (bounds.width - size.width) / 2,
-                              y: stripTop + (timeStrip - size.height) / 2),
+                              y: stripTop + (timeStrip - size.height) / 2 - lift),
                   withAttributes: attrs)
+
+        // In pomodoro mode, the hour's two pomodoros as grains under the
+        // digits: done *, running o, still to come .
+        if pomodoro {
+            let states = [p.segment < 2 ? (p.isBreak ? "*" : "o") : "*",
+                          p.segment < 2 ? "." : (p.isBreak ? "*" : "o")]
+            let dotAttrs: [NSAttributedString.Key: Any] =
+                [.font: NSFont.monospacedSystemFont(ofSize: 11, weight: .regular),
+                 .foregroundColor: NSColor.secondaryLabelColor]
+            let dots = states.joined(separator: "  ")
+            let dotSize = dots.size(withAttributes: dotAttrs)
+            dots.draw(at: NSPoint(x: (bounds.width - dotSize.width) / 2,
+                                  y: stripTop + (timeStrip - size.height) / 2 - lift
+                                     + size.height + 1),
+                      withAttributes: dotAttrs)
+        }
     }
 }

@@ -26,18 +26,49 @@ if arguments.first != "--render",
 let demo = CommandLine.arguments.contains("--demo")
 let period: TimeInterval = demo ? 30 : 3600
 
+// Pomodoro mode carves every hour into the grid 25 work, 5 break, 25 work,
+// 5 break. It is anchored to the clock like everything else here, so there is
+// no start button: you join the pomodoro already in progress, and the glass
+// turns itself at every boundary.
+var pomodoro = UserDefaults.standard.bool(forKey: "pomodoro")
+let segmentEnds = [25.0 / 60, 30.0 / 60, 55.0 / 60, 1.0]
+
 // Measured against local clock hours, so the glass turns at 4:00 sharp even in
 // a half-hour-offset timezone.
-func secondsIntoCycle(_ date: Date = Date()) -> TimeInterval {
-    let local = date.timeIntervalSince1970
+func localSeconds(_ date: Date = Date()) -> TimeInterval {
+    date.timeIntervalSince1970
         + TimeInterval(TimeZone.current.secondsFromGMT(for: date))
-    return local.truncatingRemainder(dividingBy: period)
 }
 
-func cycleIndex(_ date: Date = Date()) -> Int {
-    let local = date.timeIntervalSince1970
-        + TimeInterval(TimeZone.current.secondsFromGMT(for: date))
-    return Int(local / period)
+// One draining glass: an hour, or one work or break segment of it.
+struct Phase {
+    let isBreak: Bool
+    let fraction: Double        // how much of this glass has drained
+    let remaining: TimeInterval // until the next turn
+    let cycle: Int              // increments at every turn
+    let segment: Int            // 0-3 within the hour in pomodoro mode
+}
+
+func currentPhase(_ date: Date = Date()) -> Phase {
+    let local = localSeconds(date)
+    let hour = Int(local / period)
+    let intoHour = local.truncatingRemainder(dividingBy: period) / period
+    guard pomodoro else {
+        return Phase(isBreak: false, fraction: intoHour,
+                     remaining: (1 - intoHour) * period, cycle: hour, segment: 0)
+    }
+    var start = 0.0
+    for (i, end) in segmentEnds.enumerated() {
+        if intoHour < end {
+            return Phase(isBreak: i % 2 == 1,
+                         fraction: (intoHour - start) / (end - start),
+                         remaining: (end - intoHour) * period,
+                         cycle: hour * 4 + i, segment: i)
+        }
+        start = end
+    }
+    return Phase(isBreak: true, fraction: 1, remaining: 0,
+                 cycle: hour * 4 + 3, segment: 3)
 }
 
 // MARK: - Drawing
@@ -46,7 +77,7 @@ func cycleIndex(_ date: Date = Date()) -> Int {
 // has drained into the bottom bulb, `angle` rotates the whole glass for the
 // turn. Drawn in black and marked as a template image so the menu bar tints
 // it correctly for light and dark appearances.
-func hourglassImage(fraction: Double, angle: Double) -> NSImage {
+func hourglassImage(fraction: Double, angle: Double, muted: Bool = false) -> NSImage {
     let side: CGFloat = 18
     let image = NSImage(size: NSSize(width: side, height: side), flipped: false) { _ in
         guard let ctx = NSGraphicsContext.current?.cgContext else { return false }
@@ -79,7 +110,9 @@ func hourglassImage(fraction: Double, angle: Double) -> NSImage {
         bottomBulb.line(to: NSPoint(x: left, y: bulbBottom))
         bottomBulb.close()
 
-        NSColor.black.setFill()
+        // Break sand draws lighter, so the menu bar itself says which side of
+        // the pomodoro you are on.
+        (muted ? NSColor.black.withAlphaComponent(0.4) : NSColor.black).setFill()
         NSColor.black.setStroke()
 
         // Sand. The top surface falls as the hour passes, the bottom pile rises.
@@ -158,16 +191,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var statusItem: NSStatusItem!
     private var statusLine: NSMenuItem!
     private var loginItem: NSMenuItem!
+    private var pomodoroItem: NSMenuItem!
     private var tick: Timer?
     private var turning: Timer?
-    private var lastCycle = cycleIndex()
+    private var lastCycle = currentPhase().cycle
     private var lastDrawnFraction = -1.0
     private var glassWindow: NSWindow?
 
     func applicationDidFinishLaunching(_ note: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         buildMenu()
-        draw(fraction: secondsIntoCycle() / period, angle: 0)
+        let p = currentPhase()
+        draw(fraction: p.fraction, angle: 0)
         showGlass()
 
         tick = Timer.scheduledTimer(withTimeInterval: demo ? 0.25 : 1.0,
@@ -179,16 +214,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
     private func tock() {
         guard turning == nil else { return } // the turn animation owns the icon
-        let cycle = cycleIndex()
-        if cycle != lastCycle {
-            lastCycle = cycle
+        let p = currentPhase()
+        if p.cycle != lastCycle {
+            lastCycle = p.cycle
             startTurn()
             return
         }
         // Redraw only when the sand has visibly moved, about 1% of the bulb.
-        let fraction = secondsIntoCycle() / period
-        if abs(fraction - lastDrawnFraction) > 0.01 {
-            draw(fraction: fraction, angle: 0)
+        if abs(p.fraction - lastDrawnFraction) > 0.01 {
+            draw(fraction: p.fraction, angle: 0)
         }
     }
 
@@ -206,14 +240,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             if p >= 1 {
                 timer.invalidate()
                 self.turning = nil
-                self.draw(fraction: secondsIntoCycle() / period, angle: 0)
+                self.draw(fraction: currentPhase().fraction, angle: 0)
             }
         }
     }
 
     private func draw(fraction: Double, angle: Double) {
         lastDrawnFraction = fraction
-        statusItem.button?.image = hourglassImage(fraction: fraction, angle: angle)
+        statusItem.button?.image = hourglassImage(fraction: fraction, angle: angle,
+                                                 muted: currentPhase().isBreak)
     }
 
     private func buildMenu() {
@@ -231,6 +266,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         show.target = self
         menu.addItem(show)
 
+        pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
+                                  action: #selector(togglePomodoro), keyEquivalent: "")
+        pomodoroItem.target = self
+        menu.addItem(pomodoroItem)
+
         loginItem = NSMenuItem(title: "Launch at Login",
                                action: #selector(toggleLogin), keyEquivalent: "")
         loginItem.target = self
@@ -245,18 +285,30 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     func menuNeedsUpdate(_ menu: NSMenu) {
-        let remaining = period - secondsIntoCycle()
+        let p = currentPhase()
+        let head = pomodoro
+            ? (p.isBreak ? "Break: turns to work" : "Work: turns to break")
+            : "Turns"
         if demo {
-            statusLine.title = "Turns in \(Int(remaining.rounded())) seconds"
+            statusLine.title = "\(head) in \(Int(p.remaining.rounded())) seconds"
         } else {
-            let minutes = Int((remaining / 60).rounded(.up))
+            let minutes = Int((p.remaining / 60).rounded(.up))
             let formatter = DateFormatter()
             formatter.timeStyle = .short
             statusLine.title = minutes <= 1
-                ? "Turns in under a minute"
-                : "Turns in \(minutes) minutes, at \(formatter.string(from: Date().addingTimeInterval(remaining)))"
+                ? "\(head) in under a minute"
+                : "\(head) in \(minutes) minutes, at \(formatter.string(from: Date().addingTimeInterval(p.remaining)))"
         }
+        pomodoroItem.state = pomodoro ? .on : .off
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
+    }
+
+    // Flipping the mode changes the phase's cycle number, so the icon's turn
+    // animation and the window's reseed both follow on the next tick without
+    // any further plumbing.
+    @objc private func togglePomodoro() {
+        pomodoro.toggle()
+        UserDefaults.standard.set(pomodoro, forKey: "pomodoro")
     }
 
     @objc private func showGlass() {
