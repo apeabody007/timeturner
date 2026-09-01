@@ -3,7 +3,7 @@
 **A menu bar hourglass for the Mac. The sand drains over the current clock
 hour, and at the top of every hour the glass turns itself over.**
 
-<img src="docs/demo.gif" width="340" alt="The TimeTurner window: an hourglass drawn in keyboard characters, its sand draining grain by grain to 0:00, then turning over and starting the hour again">
+<img src="docs/demo.gif" width="270" alt="The TimeTurner window: an hourglass drawn in keyboard characters, its sand draining grain by grain to 0:00, then turning over and starting the hour again">
 
 The whole thing is drawn out of keyboard characters. The frame is `=` `/`
 `\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and every grain is real: a
