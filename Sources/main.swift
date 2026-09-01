@@ -451,6 +451,22 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
 let app = NSApplication.shared
 app.setActivationPolicy(.accessory)
+
+// There is no visible menu bar (LSUIElement), but key equivalents still
+// route through the main menu, so Cmd+Q and Cmd+W need one to live in.
+let mainMenu = NSMenu()
+let appItem = NSMenuItem()
+mainMenu.addItem(appItem)
+let appMenu = NSMenu()
+appMenu.addItem(NSMenuItem(title: "Close Window",
+                           action: #selector(NSWindow.performClose(_:)),
+                           keyEquivalent: "w"))
+appMenu.addItem(NSMenuItem(title: "Quit TimeTurner",
+                           action: #selector(NSApplication.terminate(_:)),
+                           keyEquivalent: "q"))
+appItem.submenu = appMenu
+app.mainMenu = mainMenu
+
 let delegate = AppDelegate()
 app.delegate = delegate
 app.run()
