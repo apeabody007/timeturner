@@ -27,12 +27,18 @@ There are two views of the same hour:
 
 ## Pomodoro, with no start button
 
-Turn on **Pomodoro Mode** in the menu and the hour becomes the classic grid:
-25 minutes of work, 5 of break, twice per hour, turning at :00, :25, :30 and
-:55. Because 25 + 5 + 25 + 5 is exactly 60, the grid anchors to the clock
-like everything else here, so there is nothing to start and no state to
-lose: you join the pomodoro already in progress, the way you would join the
-hour.
+Nobody starts a pomodoro here. Turn on **Pomodoro Mode** and the hour
+becomes the classic grid: 25 minutes of work, 5 of break, twice per hour,
+turning at :00, :25, :30 and :55. Because 25 + 5 + 25 + 5 is exactly 60,
+the grid anchors to the clock like everything else here. It runs whether
+you are at your desk or not, and everyone running TimeTurner anywhere on
+earth is in the same slot right now. There is no timer to set, no state to
+lose, nothing to forget to start: you join the pomodoro already in
+progress, the way you would join the hour.
+
+The app says so, too. Flip the mode on and *joined work :30 to :55* floats
+up under the neck of the glass and dissolves into the sand, and the window
+title becomes the slot itself, so the timetable is always on display.
 
 <img src="docs/pomodoro-break.png" width="270" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
 
@@ -54,9 +60,9 @@ keeps its energy down low, where it masks best and grates least over a
 long session.
 
 No dock icon, no settings beyond Launch at Login, Pomodoro Mode, and Brown
-Noise. About 650 lines of Swift,
-no dependencies. Builds with the Xcode Command Line Tools alone, so you do
-not need a 12 GB Xcode install to compile it.
+Noise. About 900 lines of Swift, no dependencies. Builds with the Xcode
+Command Line Tools alone, so you do not need a 12 GB Xcode install to
+compile it.
 
 ## Install
 
