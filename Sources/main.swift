@@ -193,6 +193,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var loginItem: NSMenuItem!
     private var pomodoroItem: NSMenuItem!
     private var sizeItem: NSMenuItem!
+    private var noiseItem: NSMenuItem!
+    private var noise: BrownNoise?
+    private var noiseOn = UserDefaults.standard.bool(forKey: "noise")
     private var tick: Timer?
     private var turning: Timer?
     private var lastCycle = currentPhase().cycle
@@ -205,6 +208,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         let p = currentPhase()
         draw(fraction: p.fraction, angle: 0)
         showGlass()
+        updateNoise()
 
         tick = Timer.scheduledTimer(withTimeInterval: demo ? 0.25 : 1.0,
                                     repeats: true) { [weak self] _ in
@@ -219,6 +223,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         if p.cycle != lastCycle {
             lastCycle = p.cycle
             startTurn()
+            updateNoise()
             return
         }
         // Redraw only when the sand has visibly moved, about 1% of the bulb.
@@ -277,6 +282,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         pomodoroItem.target = self
         menu.addItem(pomodoroItem)
 
+        noiseItem = NSMenuItem(title: "Brown Noise",
+                               action: #selector(toggleNoise), keyEquivalent: "")
+        noiseItem.target = self
+        menu.addItem(noiseItem)
+
         loginItem = NSMenuItem(title: "Launch at Login",
                                action: #selector(toggleLogin), keyEquivalent: "")
         loginItem.target = self
@@ -306,6 +316,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                 : "\(head) in \(minutes) minutes, at \(formatter.string(from: Date().addingTimeInterval(p.remaining)))"
         }
         pomodoroItem.state = pomodoro ? .on : .off
+        noiseItem.state = noiseOn ? .on : .off
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
         // Checked while the glass sits at its ideal size; a closed window
         // counts, since it will open at the default.
@@ -340,6 +351,29 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     @objc private func togglePomodoro() {
         pomodoro.toggle()
         UserDefaults.standard.set(pomodoro, forKey: "pomodoro")
+        updateNoise()
+    }
+
+    // The noise follows the hour: full while the work sand runs, a whisper
+    // during breaks.
+    private func updateNoise() {
+        guard noiseOn else { noise?.target = 0; return }
+        if noise == nil { noise = BrownNoise() }
+        noise?.start()
+        noise?.target = currentPhase().isBreak ? 0.3 : 1
+    }
+
+    @objc private func toggleNoise() {
+        noiseOn.toggle()
+        UserDefaults.standard.set(noiseOn, forKey: "noise")
+        updateNoise()
+        if !noiseOn {
+            // Let the fade finish before parking the audio engine.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+                guard let self, !self.noiseOn else { return }
+                self.noise?.stop()
+            }
+        }
     }
 
     @objc private func showGlass() {

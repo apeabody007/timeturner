@@ -42,7 +42,19 @@ says which side of the cycle the world is on. Two small grains under the
 countdown mark the hour's two pomodoros: done `*`, running `o`, still to
 come `.`.
 
-No dock icon, no settings beyond Launch at Login and Pomodoro Mode. About 650 lines of Swift,
+## Brown noise
+
+**Brown Noise** in the menu plays a low, even rumble, generated live sample
+by sample, no audio files. It is there for masking: it covers the room so
+your head does not have to. And it follows the hour like everything else,
+running full while the work sand falls and dropping to a whisper during
+breaks, so you can hear which side of the pomodoro you are on with your
+eyes closed. No claims about magic frequencies here; brown noise simply
+keeps its energy down low, where it masks best and grates least over a
+long session.
+
+No dock icon, no settings beyond Launch at Login, Pomodoro Mode, and Brown
+Noise. About 650 lines of Swift,
 no dependencies. Builds with the Xcode Command Line Tools alone, so you do
 not need a 12 GB Xcode install to compile it.
 
