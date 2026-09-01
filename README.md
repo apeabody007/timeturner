@@ -3,7 +3,9 @@
 **A menu bar hourglass for the Mac. The sand drains over the current clock
 hour, and at the top of every hour the glass turns itself over.**
 
+<p align="center">
 <img src="docs/demo.gif" width="270" alt="The TimeTurner window: an hourglass drawn in keyboard characters, its sand draining grain by grain to 0:00, then turning over and starting the hour again">
+</p>
 
 The whole thing is drawn out of keyboard characters. The frame is `=` `/`
 `\` `(` `)`, the sand is `.` `:` `;` `,` `*` `o`, and every grain is real: a
@@ -66,7 +68,11 @@ compile it.
 
 ## Install
 
-Build it from a clone:
+Download **TimeTurner.dmg** from [the latest release](https://github.com/apeabody007/timeturner/releases/latest),
+open it, and drag TimeTurner to Applications. It is signed and notarized by
+Apple, so it opens without any Gatekeeper warnings.
+
+Or build it from a clone:
 
 ```
 ./build.sh install
@@ -74,7 +80,8 @@ Build it from a clone:
 
 That builds `TimeTurner.app`, copies it to `/Applications`, and launches it.
 Turn on **Launch at Login** from the menu if you want it to always be there.
-Note that it ad-hoc signs, so macOS may ask you to approve it the first time.
+Note that a local build ad-hoc signs, so macOS may ask you to approve it the
+first time.
 
 ## Watch it turn without waiting an hour
 
