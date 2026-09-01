@@ -43,7 +43,7 @@ up under the neck of the glass and dissolves into the sand, and the window
 title becomes the slot itself, so the timetable is always on display.
 
 <p align="center">
-<img src="docs/pomodoro-break.png" width="270" alt="A break glass: the same hourglass running wavy break sand, with a dimmed 3:00 countdown and two pomodoro grains under it">
+<img src="docs/pomodoro-join.png" width="270" alt="The glass mid work slot, with joined work :30 to :55 floating under the neck, an 11:15 countdown, and the hour's two pomodoro grains under the digits">
 </p>
 
 Work runs the usual sand. Breaks run different sand, wavy `~` and `-`
