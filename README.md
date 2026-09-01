@@ -63,8 +63,9 @@ eyes closed. No claims about magic frequencies here; brown noise simply
 keeps its energy down low, where it masks best and grates least over a
 long session.
 
-No dock icon, no settings beyond Launch at Login, Pomodoro Mode, and Brown
-Noise. About 900 lines of Swift, no dependencies. Builds with the Xcode
+No dock icon, no settings beyond Launch at Login, Pomodoro Mode, Brown
+Noise, and Pin to Front, which floats the glass above every other window
+while you work. About 900 lines of Swift, no dependencies. Builds with the Xcode
 Command Line Tools alone, so you do not need a 12 GB Xcode install to
 compile it.
 

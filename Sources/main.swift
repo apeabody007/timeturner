@@ -205,6 +205,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var noiseItem: NSMenuItem!
     private var noise: BrownNoise?
     private var noiseOn = UserDefaults.standard.bool(forKey: "noise")
+    private var pinItem: NSMenuItem!
+    private var pinned = UserDefaults.standard.bool(forKey: "pinned")
     private var tick: Timer?
     private var turning: Timer?
     private var lastCycle = currentPhase().cycle
@@ -291,6 +293,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         sizeItem.target = self
         menu.addItem(sizeItem)
 
+        pinItem = NSMenuItem(title: "Pin to Front",
+                             action: #selector(togglePin), keyEquivalent: "")
+        pinItem.target = self
+        menu.addItem(pinItem)
+
         pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
                                   action: #selector(togglePomodoro), keyEquivalent: "")
         pomodoroItem.target = self
@@ -331,6 +338,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         }
         pomodoroItem.state = pomodoro ? .on : .off
         noiseItem.state = noiseOn ? .on : .off
+        pinItem.state = pinned ? .on : .off
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
         // Checked while the glass sits at its ideal size; a closed window
         // counts, since it will open at the default.
@@ -415,8 +423,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             w.center()
             glassWindow = w
         }
+        glassWindow?.level = pinned ? .floating : .normal
         glassWindow?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
+    }
+
+    // Pinned, the glass floats above every other window while you work.
+    @objc private func togglePin() {
+        pinned.toggle()
+        UserDefaults.standard.set(pinned, forKey: "pinned")
+        glassWindow?.level = pinned ? .floating : .normal
     }
 
     @objc private func toggleLogin() {
