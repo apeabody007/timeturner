@@ -297,6 +297,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                              action: #selector(togglePin), keyEquivalent: "")
         pinItem.target = self
         menu.addItem(pinItem)
+        menu.addItem(.separator())
 
         pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
                                   action: #selector(togglePomodoro), keyEquivalent: "")
@@ -307,6 +308,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                                action: #selector(toggleNoise), keyEquivalent: "")
         noiseItem.target = self
         menu.addItem(noiseItem)
+        menu.addItem(.separator())
 
         loginItem = NSMenuItem(title: "Launch at Login",
                                action: #selector(toggleLogin), keyEquivalent: "")
