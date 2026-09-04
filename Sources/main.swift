@@ -419,6 +419,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                              styleMask: [.titled, .closable, .miniaturizable, .resizable],
                              backing: .buffered, defer: false)
             w.title = "TimeTurner"
+            // Match the glass, so anything the window paints itself during a
+            // live resize matches instead of flashing grey.
+            w.backgroundColor = .textBackgroundColor
             w.minSize = NSSize(width: 220, height: 300)
             w.isReleasedWhenClosed = false
             w.contentView = GlassView()

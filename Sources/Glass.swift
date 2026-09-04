@@ -77,8 +77,16 @@ final class GlassView: NSView {
 
     override var isFlipped: Bool { true }
 
+    // draw() fills every pixel of the view before anything else, so AppKit
+    // has no reason to clear the window background underneath first. Saying
+    // so is what stops that clear showing through as a flash between frames.
+    override var isOpaque: Bool { true }
+
     override func viewDidMoveToWindow() {
         super.viewDidMoveToWindow()
+        // Layer backing double buffers the view. Without it a redraw this
+        // frequent, with this many glyphs, can be shown half finished.
+        wantsLayer = true
         guard timer == nil else { return }
         cellSize = Self.cellMetrics()
         rebuild()
