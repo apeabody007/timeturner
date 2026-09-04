@@ -87,6 +87,13 @@ final class GlassView: NSView {
         // Layer backing double buffers the view. Without it a redraw this
         // frequent, with this many glyphs, can be shown half finished.
         wantsLayer = true
+        // AppKit's default policy regenerates a layer-backed view's contents
+        // on its own schedule, including mid-resize and when the view moves
+        // between screens, and each regeneration starts from a cleared layer.
+        // Redrawing only when asked is what keeps that clear off the screen.
+        layerContentsRedrawPolicy = .onSetNeedsDisplay
+        layer?.isOpaque = true
+        layer?.contentsScale = window?.backingScaleFactor ?? 2
         guard timer == nil else { return }
         cellSize = Self.cellMetrics()
         rebuild()
@@ -95,6 +102,15 @@ final class GlassView: NSView {
             guard let self, self.window?.isVisible == true else { return }
             self.step()
         }
+    }
+
+    // Moving to another screen can change the backing scale. A layer keeps
+    // rendering at its old scale until it is told, and repaints itself to
+    // catch up, which reads as a flash.
+    override func viewDidChangeBackingProperties() {
+        super.viewDidChangeBackingProperties()
+        layer?.contentsScale = window?.backingScaleFactor ?? 2
+        needsDisplay = true
     }
 
     override func setFrameSize(_ newSize: NSSize) {
