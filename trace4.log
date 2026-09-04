@@ -1,0 +1,1326 @@
+[  0.000] backingPropertiesChanged scale=2.0 screen=Built-in Retina Display
+[  0.040] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.100] step sand=true level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.107] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.201] step sand=true level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.301] step sand=false level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.401] step sand=false level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.501] step sand=false level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.601] step sand=false level=false shimmer=false released=0 sec=207 toast=true -> repaint=true
+[  0.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.701] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  0.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.801] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  0.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  0.901] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  0.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.001] step sand=false level=false shimmer=true released=0 sec=206 toast=true -> repaint=true
+[  1.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.100] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  1.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.201] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  1.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.301] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  1.302] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.401] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  1.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.501] step sand=false level=false shimmer=false released=0 sec=206 toast=true -> repaint=true
+[  1.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.601] step sand=true level=false shimmer=false released=1 sec=206 toast=true -> repaint=true
+[  1.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.701] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  1.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.801] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  1.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  1.901] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  1.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.001] step sand=true level=false shimmer=true released=0 sec=205 toast=true -> repaint=true
+[  2.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.100] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.201] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.207] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.301] step sand=true level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.307] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.401] step sand=false level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.402] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.500] step sand=false level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.507] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.601] step sand=false level=false shimmer=false released=0 sec=205 toast=true -> repaint=true
+[  2.607] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.701] step sand=false level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  2.707] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.801] step sand=false level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  2.807] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  2.901] step sand=false level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  2.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.001] step sand=false level=false shimmer=true released=0 sec=204 toast=true -> repaint=true
+[  3.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.101] step sand=true level=false shimmer=false released=1 sec=204 toast=true -> repaint=true
+[  3.108] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.201] step sand=true level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  3.207] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.301] step sand=true level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  3.307] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.401] step sand=true level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  3.407] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.501] step sand=true level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  3.507] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.601] step sand=true level=false shimmer=false released=0 sec=204 toast=true -> repaint=true
+[  3.607] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.701] step sand=true level=false shimmer=false released=0 sec=203 toast=true -> repaint=true
+[  3.707] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.801] step sand=true level=false shimmer=false released=0 sec=203 toast=true -> repaint=true
+[  3.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  3.901] step sand=true level=false shimmer=false released=0 sec=203 toast=true -> repaint=true
+[  3.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.001] step sand=false level=false shimmer=true released=0 sec=203 toast=true -> repaint=true
+[  4.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.101] step sand=false level=false shimmer=false released=0 sec=203 toast=true -> repaint=true
+[  4.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.200] step sand=false level=false shimmer=false released=0 sec=203 toast=false -> repaint=false
+[  4.301] step sand=false level=false shimmer=false released=0 sec=203 toast=false -> repaint=false
+[  4.401] step sand=false level=false shimmer=false released=0 sec=203 toast=false -> repaint=false
+[  4.501] step sand=false level=false shimmer=false released=0 sec=203 toast=false -> repaint=false
+[  4.601] step sand=true level=false shimmer=false released=1 sec=203 toast=false -> repaint=true
+[  4.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.701] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  4.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.800] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  4.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  4.901] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  4.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.001] step sand=true level=false shimmer=true released=0 sec=202 toast=false -> repaint=true
+[  5.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.101] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  5.102] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.200] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  5.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.301] step sand=true level=false shimmer=false released=0 sec=202 toast=false -> repaint=true
+[  5.302] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.401] step sand=false level=false shimmer=false released=0 sec=202 toast=false -> repaint=false
+[  5.501] step sand=false level=false shimmer=false released=0 sec=202 toast=false -> repaint=false
+[  5.600] step sand=false level=false shimmer=false released=0 sec=202 toast=false -> repaint=false
+[  5.701] step sand=false level=false shimmer=false released=0 sec=201 toast=false -> repaint=true
+[  5.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  5.801] step sand=false level=false shimmer=false released=0 sec=201 toast=false -> repaint=false
+[  5.901] step sand=false level=false shimmer=false released=0 sec=201 toast=false -> repaint=false
+[  6.001] step sand=false level=false shimmer=true released=0 sec=201 toast=false -> repaint=true
+[  6.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.101] step sand=false level=false shimmer=false released=0 sec=201 toast=false -> repaint=false
+[  6.201] step sand=true level=false shimmer=false released=1 sec=201 toast=false -> repaint=true
+[  6.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.301] step sand=true level=false shimmer=false released=0 sec=201 toast=false -> repaint=true
+[  6.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.401] step sand=true level=false shimmer=false released=0 sec=201 toast=false -> repaint=true
+[  6.402] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.501] step sand=true level=false shimmer=false released=0 sec=201 toast=false -> repaint=true
+[  6.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.601] step sand=true level=false shimmer=false released=0 sec=201 toast=false -> repaint=true
+[  6.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.701] step sand=true level=false shimmer=false released=0 sec=200 toast=false -> repaint=true
+[  6.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.801] step sand=true level=false shimmer=false released=0 sec=200 toast=false -> repaint=true
+[  6.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  6.901] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.001] step sand=false level=false shimmer=true released=0 sec=200 toast=false -> repaint=true
+[  7.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  7.101] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.200] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.301] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.401] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.501] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.601] step sand=false level=false shimmer=false released=0 sec=200 toast=false -> repaint=false
+[  7.701] step sand=true level=false shimmer=false released=1 sec=199 toast=false -> repaint=true
+[  7.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  7.800] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  7.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  7.901] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  7.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.001] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.100] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.200] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.301] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.401] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.501] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.601] step sand=true level=false shimmer=false released=0 sec=199 toast=false -> repaint=true
+[  8.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.700] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  8.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.801] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  8.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  8.901] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  8.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.001] step sand=true level=false shimmer=true released=0 sec=198 toast=false -> repaint=true
+[  9.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.101] step sand=false level=false shimmer=false released=0 sec=198 toast=false -> repaint=false
+[  9.201] step sand=false level=false shimmer=false released=0 sec=198 toast=false -> repaint=false
+[  9.301] step sand=true level=false shimmer=false released=1 sec=198 toast=false -> repaint=true
+[  9.302] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.401] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  9.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.501] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  9.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.600] step sand=true level=false shimmer=false released=0 sec=198 toast=false -> repaint=true
+[  9.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.701] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[  9.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.801] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[  9.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[  9.901] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[  9.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.000] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.100] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.201] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.301] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.401] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.501] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.601] step sand=true level=false shimmer=false released=0 sec=197 toast=false -> repaint=true
+[ 10.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.700] step sand=false level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 10.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.801] step sand=true level=false shimmer=false released=1 sec=196 toast=false -> repaint=true
+[ 10.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 10.901] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 10.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.001] step sand=true level=false shimmer=true released=0 sec=196 toast=false -> repaint=true
+[ 11.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.100] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.201] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.301] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.401] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.501] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.601] step sand=true level=false shimmer=false released=0 sec=196 toast=false -> repaint=true
+[ 11.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.700] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 11.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.801] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 11.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 11.901] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 11.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.000] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 12.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.103] step sand=false level=false shimmer=false released=0 sec=195 toast=false -> repaint=false
+[ 12.200] step sand=false level=false shimmer=false released=0 sec=195 toast=false -> repaint=false
+[ 12.301] step sand=true level=true shimmer=false released=1 sec=195 toast=false -> repaint=true
+[ 12.302] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.401] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 12.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.501] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 12.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.601] step sand=true level=false shimmer=false released=0 sec=195 toast=false -> repaint=true
+[ 12.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.701] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 12.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.801] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 12.802] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 12.901] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 12.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.001] step sand=true level=false shimmer=true released=0 sec=194 toast=false -> repaint=true
+[ 13.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.100] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 13.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.201] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 13.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.300] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 13.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.401] step sand=true level=false shimmer=false released=0 sec=194 toast=false -> repaint=true
+[ 13.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.501] step sand=false level=false shimmer=false released=0 sec=194 toast=false -> repaint=false
+[ 13.601] step sand=false level=false shimmer=false released=0 sec=194 toast=false -> repaint=false
+[ 13.701] step sand=false level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 13.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 13.801] step sand=false level=false shimmer=false released=0 sec=193 toast=false -> repaint=false
+[ 13.900] step sand=true level=false shimmer=false released=1 sec=193 toast=false -> repaint=true
+[ 13.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.001] step sand=true level=false shimmer=true released=0 sec=193 toast=false -> repaint=true
+[ 14.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.100] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.201] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.202] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.301] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.302] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.401] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.402] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.501] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.601] step sand=true level=false shimmer=false released=0 sec=193 toast=false -> repaint=true
+[ 14.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.701] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 14.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.801] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 14.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 14.901] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 14.902] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.001] step sand=true level=false shimmer=true released=0 sec=192 toast=false -> repaint=true
+[ 15.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.100] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 15.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.201] step sand=false level=false shimmer=false released=0 sec=192 toast=false -> repaint=false
+[ 15.301] step sand=false level=false shimmer=false released=0 sec=192 toast=false -> repaint=false
+[ 15.401] step sand=true level=false shimmer=false released=1 sec=192 toast=false -> repaint=true
+[ 15.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.500] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 15.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.601] step sand=true level=false shimmer=false released=0 sec=192 toast=false -> repaint=true
+[ 15.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.701] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 15.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.801] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 15.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 15.901] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 15.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.001] step sand=true level=false shimmer=true released=0 sec=191 toast=false -> repaint=true
+[ 16.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.105] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 16.107] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.200] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 16.206] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.300] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 16.307] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.401] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 16.402] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.501] step sand=true level=false shimmer=false released=0 sec=191 toast=false -> repaint=true
+[ 16.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.600] step sand=false level=false shimmer=false released=0 sec=191 toast=false -> repaint=false
+[ 16.700] step sand=false level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 16.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 16.800] step sand=false level=false shimmer=false released=0 sec=190 toast=false -> repaint=false
+[ 16.900] step sand=true level=true shimmer=false released=1 sec=190 toast=false -> repaint=true
+[ 16.906] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.001] step sand=true level=false shimmer=true released=0 sec=190 toast=false -> repaint=true
+[ 17.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.100] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.201] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.301] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.400] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.501] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.601] step sand=true level=false shimmer=false released=0 sec=190 toast=false -> repaint=true
+[ 17.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.701] step sand=true level=false shimmer=false released=0 sec=189 toast=false -> repaint=true
+[ 17.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.801] step sand=true level=false shimmer=false released=0 sec=189 toast=false -> repaint=true
+[ 17.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 17.901] step sand=true level=false shimmer=false released=0 sec=189 toast=false -> repaint=true
+[ 17.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.001] step sand=false level=false shimmer=true released=0 sec=189 toast=false -> repaint=true
+[ 18.002] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.101] step sand=false level=false shimmer=false released=0 sec=189 toast=false -> repaint=false
+[ 18.201] step sand=false level=false shimmer=false released=0 sec=189 toast=false -> repaint=false
+[ 18.301] step sand=false level=false shimmer=false released=0 sec=189 toast=false -> repaint=false
+[ 18.401] step sand=false level=false shimmer=false released=0 sec=189 toast=false -> repaint=false
+[ 18.501] step sand=true level=true shimmer=false released=1 sec=189 toast=false -> repaint=true
+[ 18.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.601] step sand=true level=false shimmer=false released=0 sec=189 toast=false -> repaint=true
+[ 18.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.701] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 18.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.801] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 18.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 18.901] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 18.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.001] step sand=true level=false shimmer=true released=0 sec=188 toast=false -> repaint=true
+[ 19.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.101] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 19.102] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.201] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 19.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.301] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 19.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.401] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 19.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.501] step sand=true level=false shimmer=false released=0 sec=188 toast=false -> repaint=true
+[ 19.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.601] step sand=false level=false shimmer=false released=0 sec=188 toast=false -> repaint=false
+[ 19.700] step sand=false level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 19.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 19.801] step sand=false level=false shimmer=false released=0 sec=187 toast=false -> repaint=false
+[ 19.900] step sand=false level=false shimmer=false released=0 sec=187 toast=false -> repaint=false
+[ 20.001] step sand=true level=true shimmer=true released=1 sec=187 toast=false -> repaint=true
+[ 20.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.100] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.201] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.301] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.401] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.501] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.601] step sand=true level=false shimmer=false released=0 sec=187 toast=false -> repaint=true
+[ 20.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.701] step sand=true level=false shimmer=false released=0 sec=186 toast=false -> repaint=true
+[ 20.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.800] step sand=true level=false shimmer=false released=0 sec=186 toast=false -> repaint=true
+[ 20.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 20.900] step sand=true level=false shimmer=false released=0 sec=186 toast=false -> repaint=true
+[ 20.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 21.001] step sand=false level=false shimmer=true released=0 sec=186 toast=false -> repaint=true
+[ 21.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 21.101] step sand=false level=false shimmer=false released=0 sec=186 toast=false -> repaint=false
+[ 21.200] step sand=false level=false shimmer=false released=0 sec=186 toast=false -> repaint=false
+[ 21.301] step sand=false level=false shimmer=false released=0 sec=186 toast=false -> repaint=false
+[ 21.401] step sand=false level=false shimmer=false released=0 sec=186 toast=false -> repaint=false
+[ 21.501] step sand=false level=false shimmer=false released=0 sec=186 toast=false -> repaint=false
+[ 21.601] step sand=true level=true shimmer=false released=1 sec=186 toast=false -> repaint=true
+[ 21.602] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 21.701] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 21.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 21.801] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 21.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 21.900] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 21.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.000] step sand=true level=false shimmer=true released=0 sec=185 toast=false -> repaint=true
+[ 22.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.100] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 22.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.201] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 22.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.301] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 22.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.401] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 22.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.501] step sand=true level=false shimmer=false released=0 sec=185 toast=false -> repaint=true
+[ 22.502] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.601] step sand=false level=false shimmer=false released=0 sec=185 toast=false -> repaint=false
+[ 22.701] step sand=false level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 22.702] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 22.801] step sand=false level=false shimmer=false released=0 sec=184 toast=false -> repaint=false
+[ 22.901] step sand=false level=false shimmer=false released=0 sec=184 toast=false -> repaint=false
+[ 23.000] step sand=false level=false shimmer=true released=0 sec=184 toast=false -> repaint=true
+[ 23.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.104] step sand=true level=true shimmer=false released=1 sec=184 toast=false -> repaint=true
+[ 23.107] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.201] step sand=true level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 23.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.300] step sand=true level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 23.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.401] step sand=true level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 23.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.500] step sand=true level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 23.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.601] step sand=true level=false shimmer=false released=0 sec=184 toast=false -> repaint=true
+[ 23.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.700] step sand=true level=false shimmer=false released=0 sec=183 toast=false -> repaint=true
+[ 23.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.801] step sand=true level=false shimmer=false released=0 sec=183 toast=false -> repaint=true
+[ 23.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 23.900] step sand=true level=false shimmer=false released=0 sec=183 toast=false -> repaint=true
+[ 23.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 24.001] step sand=false level=false shimmer=true released=0 sec=183 toast=false -> repaint=true
+[ 24.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 24.100] step sand=false level=false shimmer=false released=0 sec=183 toast=false -> repaint=false
+[ 24.200] step sand=false level=false shimmer=false released=0 sec=183 toast=false -> repaint=false
+[ 24.300] step sand=false level=false shimmer=false released=0 sec=183 toast=false -> repaint=false
+[ 24.400] step sand=false level=false shimmer=false released=0 sec=183 toast=false -> repaint=false
+[ 24.500] step sand=false level=false shimmer=false released=0 sec=183 toast=false -> repaint=false
+[ 24.600] step sand=true level=false shimmer=false released=1 sec=183 toast=false -> repaint=true
+[ 24.606] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 24.700] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 24.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 24.800] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 24.806] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 24.900] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 24.906] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.000] step sand=true level=false shimmer=true released=0 sec=182 toast=false -> repaint=true
+[ 25.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.100] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 25.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.200] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 25.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.300] step sand=true level=false shimmer=false released=0 sec=182 toast=false -> repaint=true
+[ 25.306] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.400] step sand=false level=false shimmer=false released=0 sec=182 toast=false -> repaint=false
+[ 25.501] step sand=false level=false shimmer=false released=0 sec=182 toast=false -> repaint=false
+[ 25.601] step sand=false level=false shimmer=false released=0 sec=182 toast=false -> repaint=false
+[ 25.701] step sand=false level=false shimmer=false released=0 sec=181 toast=false -> repaint=true
+[ 25.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 25.800] step sand=false level=false shimmer=false released=0 sec=181 toast=false -> repaint=false
+[ 25.901] step sand=false level=false shimmer=false released=0 sec=181 toast=false -> repaint=false
+[ 26.001] step sand=false level=false shimmer=true released=0 sec=181 toast=false -> repaint=true
+[ 26.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.105] step sand=false level=false shimmer=false released=0 sec=181 toast=false -> repaint=false
+[ 26.200] step sand=true level=false shimmer=false released=1 sec=181 toast=false -> repaint=true
+[ 26.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.300] step sand=true level=false shimmer=false released=0 sec=181 toast=false -> repaint=true
+[ 26.306] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.401] step sand=true level=false shimmer=false released=0 sec=181 toast=false -> repaint=true
+[ 26.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.501] step sand=true level=false shimmer=false released=0 sec=181 toast=false -> repaint=true
+[ 26.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.601] step sand=true level=false shimmer=false released=0 sec=181 toast=false -> repaint=true
+[ 26.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.701] step sand=true level=false shimmer=false released=0 sec=180 toast=false -> repaint=true
+[ 26.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.800] step sand=true level=false shimmer=false released=0 sec=180 toast=false -> repaint=true
+[ 26.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 26.901] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.000] step sand=false level=false shimmer=true released=0 sec=180 toast=false -> repaint=true
+[ 27.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 27.100] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.200] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.301] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.401] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.500] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.600] step sand=false level=false shimmer=false released=0 sec=180 toast=false -> repaint=false
+[ 27.700] step sand=true level=false shimmer=false released=1 sec=179 toast=false -> repaint=true
+[ 27.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 27.800] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 27.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 27.901] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 27.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.001] step sand=true level=false shimmer=true released=0 sec=179 toast=false -> repaint=true
+[ 28.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.100] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 28.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.200] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 28.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.300] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 28.306] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.400] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 28.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.500] step sand=true level=false shimmer=false released=0 sec=179 toast=false -> repaint=true
+[ 28.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.600] step sand=false level=false shimmer=false released=0 sec=179 toast=false -> repaint=false
+[ 28.700] step sand=false level=false shimmer=false released=0 sec=178 toast=false -> repaint=true
+[ 28.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 28.800] step sand=false level=false shimmer=false released=0 sec=178 toast=false -> repaint=false
+[ 28.900] step sand=false level=false shimmer=false released=0 sec=178 toast=false -> repaint=false
+[ 29.000] step sand=false level=false shimmer=true released=0 sec=178 toast=false -> repaint=true
+[ 29.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.100] step sand=false level=false shimmer=false released=0 sec=178 toast=false -> repaint=false
+[ 29.200] step sand=false level=false shimmer=false released=0 sec=178 toast=false -> repaint=false
+[ 29.300] step sand=true level=false shimmer=false released=1 sec=178 toast=false -> repaint=true
+[ 29.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.400] step sand=true level=false shimmer=false released=0 sec=178 toast=false -> repaint=true
+[ 29.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.500] step sand=true level=false shimmer=false released=0 sec=178 toast=false -> repaint=true
+[ 29.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.600] step sand=true level=false shimmer=false released=0 sec=178 toast=false -> repaint=true
+[ 29.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.700] step sand=true level=false shimmer=false released=0 sec=177 toast=false -> repaint=true
+[ 29.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.800] step sand=true level=false shimmer=false released=0 sec=177 toast=false -> repaint=true
+[ 29.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 29.900] step sand=true level=false shimmer=false released=0 sec=177 toast=false -> repaint=true
+[ 29.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 30.000] step sand=true level=false shimmer=true released=0 sec=177 toast=false -> repaint=true
+[ 30.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 30.100] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.200] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.300] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.400] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.500] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.600] step sand=false level=false shimmer=false released=0 sec=177 toast=false -> repaint=false
+[ 30.700] step sand=false level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 30.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 30.800] step sand=true level=false shimmer=false released=1 sec=176 toast=false -> repaint=true
+[ 30.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 30.900] step sand=true level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 30.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.000] step sand=true level=false shimmer=true released=0 sec=176 toast=false -> repaint=true
+[ 31.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.100] step sand=true level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 31.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.200] step sand=true level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 31.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.300] step sand=true level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 31.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.400] step sand=true level=false shimmer=false released=0 sec=176 toast=false -> repaint=true
+[ 31.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.500] step sand=false level=false shimmer=false released=0 sec=176 toast=false -> repaint=false
+[ 31.601] step sand=false level=false shimmer=false released=0 sec=176 toast=false -> repaint=false
+[ 31.700] step sand=false level=false shimmer=false released=0 sec=175 toast=false -> repaint=true
+[ 31.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 31.800] step sand=false level=false shimmer=false released=0 sec=175 toast=false -> repaint=false
+[ 31.900] step sand=false level=false shimmer=false released=0 sec=175 toast=false -> repaint=false
+[ 32.000] step sand=false level=false shimmer=true released=0 sec=175 toast=false -> repaint=true
+[ 32.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.100] step sand=false level=false shimmer=false released=0 sec=175 toast=false -> repaint=false
+[ 32.200] step sand=false level=false shimmer=false released=0 sec=175 toast=false -> repaint=false
+[ 32.300] step sand=true level=true shimmer=false released=1 sec=175 toast=false -> repaint=true
+[ 32.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.400] step sand=true level=false shimmer=false released=0 sec=175 toast=false -> repaint=true
+[ 32.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.500] step sand=true level=false shimmer=false released=0 sec=175 toast=false -> repaint=true
+[ 32.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.600] step sand=true level=false shimmer=false released=0 sec=175 toast=false -> repaint=true
+[ 32.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.700] step sand=true level=false shimmer=false released=0 sec=174 toast=false -> repaint=true
+[ 32.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.799] step sand=true level=false shimmer=false released=0 sec=174 toast=false -> repaint=true
+[ 32.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 32.900] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.001] step sand=false level=false shimmer=true released=0 sec=174 toast=false -> repaint=true
+[ 33.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 33.100] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.200] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.300] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.400] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.500] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.600] step sand=false level=false shimmer=false released=0 sec=174 toast=false -> repaint=false
+[ 33.700] step sand=false level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 33.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 33.800] step sand=false level=false shimmer=false released=0 sec=173 toast=false -> repaint=false
+[ 33.900] step sand=true level=true shimmer=false released=1 sec=173 toast=false -> repaint=true
+[ 33.906] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.000] step sand=true level=false shimmer=true released=0 sec=173 toast=false -> repaint=true
+[ 34.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.100] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.200] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.299] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.306] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.400] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.406] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.500] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.506] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.600] step sand=true level=false shimmer=false released=0 sec=173 toast=false -> repaint=true
+[ 34.606] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.700] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 34.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.800] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 34.805] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 34.900] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 34.905] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=Built-in Retina Display
+[ 35.000] step sand=true level=false shimmer=true released=0 sec=172 toast=false -> repaint=true
+[ 35.008] backingPropertiesChanged scale=2.0 screen=BenQ MA270U
+[ 35.017] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.100] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 35.108] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.200] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 35.206] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.300] step sand=false level=false shimmer=false released=0 sec=172 toast=false -> repaint=false
+[ 35.400] step sand=true level=false shimmer=false released=1 sec=172 toast=false -> repaint=true
+[ 35.406] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.500] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 35.506] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.600] step sand=true level=false shimmer=false released=0 sec=172 toast=false -> repaint=true
+[ 35.606] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.700] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 35.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.800] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 35.806] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 35.900] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 35.909] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.000] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.100] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.200] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.300] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.400] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.406] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.500] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.600] step sand=true level=false shimmer=false released=0 sec=171 toast=false -> repaint=true
+[ 36.606] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.700] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 36.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 36.800] step sand=false level=false shimmer=false released=0 sec=170 toast=false -> repaint=false
+[ 36.900] step sand=true level=true shimmer=false released=1 sec=170 toast=false -> repaint=true
+[ 36.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.000] step sand=true level=false shimmer=true released=0 sec=170 toast=false -> repaint=true
+[ 37.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.101] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.199] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.300] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.400] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.500] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.600] step sand=true level=false shimmer=false released=0 sec=170 toast=false -> repaint=true
+[ 37.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.700] step sand=true level=false shimmer=false released=0 sec=169 toast=false -> repaint=true
+[ 37.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.800] step sand=true level=false shimmer=false released=0 sec=169 toast=false -> repaint=true
+[ 37.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 37.900] step sand=true level=false shimmer=false released=0 sec=169 toast=false -> repaint=true
+[ 37.906] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.000] step sand=true level=false shimmer=true released=0 sec=169 toast=false -> repaint=true
+[ 38.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.100] step sand=true level=false shimmer=false released=0 sec=169 toast=false -> repaint=true
+[ 38.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.200] step sand=false level=false shimmer=false released=0 sec=169 toast=false -> repaint=false
+[ 38.299] step sand=false level=false shimmer=false released=0 sec=169 toast=false -> repaint=false
+[ 38.400] step sand=false level=false shimmer=false released=0 sec=169 toast=false -> repaint=false
+[ 38.500] step sand=true level=false shimmer=false released=1 sec=169 toast=false -> repaint=true
+[ 38.506] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.600] step sand=true level=false shimmer=false released=0 sec=169 toast=false -> repaint=true
+[ 38.605] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.702] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 38.706] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.800] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 38.806] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.899] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 38.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 38.999] step sand=true level=false shimmer=true released=0 sec=168 toast=false -> repaint=true
+[ 39.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.100] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.200] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.300] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.400] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.500] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.506] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.600] step sand=true level=false shimmer=false released=0 sec=168 toast=false -> repaint=true
+[ 39.605] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.700] step sand=false level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 39.705] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 39.800] step sand=false level=false shimmer=false released=0 sec=167 toast=false -> repaint=false
+[ 39.900] step sand=false level=false shimmer=false released=0 sec=167 toast=false -> repaint=false
+[ 40.000] step sand=true level=false shimmer=true released=1 sec=167 toast=false -> repaint=true
+[ 40.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.100] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.200] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.206] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.300] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.400] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.500] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.506] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.600] step sand=true level=false shimmer=false released=0 sec=167 toast=false -> repaint=true
+[ 40.606] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.700] step sand=true level=false shimmer=false released=0 sec=166 toast=false -> repaint=true
+[ 40.705] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.800] step sand=true level=false shimmer=false released=0 sec=166 toast=false -> repaint=true
+[ 40.806] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.900] step sand=true level=false shimmer=false released=0 sec=166 toast=false -> repaint=true
+[ 40.906] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 40.999] step sand=true level=false shimmer=false released=0 sec=166 toast=false -> repaint=true
+[ 41.006] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 41.099] step sand=false level=false shimmer=false released=0 sec=166 toast=false -> repaint=false
+[ 41.200] step sand=false level=false shimmer=false released=0 sec=166 toast=false -> repaint=false
+[ 41.299] step sand=false level=false shimmer=false released=0 sec=166 toast=false -> repaint=false
+[ 41.400] step sand=false level=false shimmer=false released=0 sec=166 toast=false -> repaint=false
+[ 41.500] step sand=false level=false shimmer=false released=0 sec=166 toast=false -> repaint=false
+[ 41.600] step sand=true level=false shimmer=false released=1 sec=166 toast=false -> repaint=true
+[ 41.605] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 41.700] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 41.705] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 41.800] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 41.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 41.899] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 41.905] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 41.999] step sand=true level=false shimmer=true released=0 sec=165 toast=false -> repaint=true
+[ 42.005] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.100] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.200] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.300] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.400] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.500] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.600] step sand=true level=false shimmer=false released=0 sec=165 toast=false -> repaint=true
+[ 42.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.700] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 42.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.800] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 42.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 42.899] step sand=false level=false shimmer=false released=0 sec=164 toast=false -> repaint=false
+[ 43.000] step sand=false level=false shimmer=true released=0 sec=164 toast=false -> repaint=true
+[ 43.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.099] step sand=true level=true shimmer=false released=1 sec=164 toast=false -> repaint=true
+[ 43.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.200] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 43.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.300] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 43.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.400] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 43.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.500] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 43.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.600] step sand=true level=false shimmer=false released=0 sec=164 toast=false -> repaint=true
+[ 43.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.700] step sand=true level=false shimmer=false released=0 sec=163 toast=false -> repaint=true
+[ 43.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.800] step sand=true level=false shimmer=false released=0 sec=163 toast=false -> repaint=true
+[ 43.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 43.899] step sand=true level=false shimmer=false released=0 sec=163 toast=false -> repaint=true
+[ 43.899] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 44.000] step sand=true level=false shimmer=true released=0 sec=163 toast=false -> repaint=true
+[ 44.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 44.103] step sand=false level=false shimmer=false released=0 sec=163 toast=false -> repaint=false
+[ 44.200] step sand=false level=false shimmer=false released=0 sec=163 toast=false -> repaint=false
+[ 44.300] step sand=false level=false shimmer=false released=0 sec=163 toast=false -> repaint=false
+[ 44.400] step sand=false level=false shimmer=false released=0 sec=163 toast=false -> repaint=false
+[ 44.499] step sand=false level=false shimmer=false released=0 sec=163 toast=false -> repaint=false
+[ 44.600] step sand=true level=true shimmer=false released=1 sec=163 toast=false -> repaint=true
+[ 44.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 44.700] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 44.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 44.799] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 44.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 44.899] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 44.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.000] step sand=true level=false shimmer=true released=0 sec=162 toast=false -> repaint=true
+[ 45.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.100] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.200] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.299] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.400] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.500] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.600] step sand=true level=false shimmer=false released=0 sec=162 toast=false -> repaint=true
+[ 45.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.700] step sand=true level=false shimmer=false released=0 sec=161 toast=false -> repaint=true
+[ 45.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 45.800] step sand=false level=false shimmer=false released=0 sec=161 toast=false -> repaint=false
+[ 45.899] step sand=false level=false shimmer=false released=0 sec=161 toast=false -> repaint=false
+[ 46.000] step sand=false level=false shimmer=true released=0 sec=161 toast=false -> repaint=true
+[ 46.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.100] step sand=false level=false shimmer=false released=0 sec=161 toast=false -> repaint=false
+[ 46.200] step sand=true level=true shimmer=false released=1 sec=161 toast=false -> repaint=true
+[ 46.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.300] step sand=true level=false shimmer=false released=0 sec=161 toast=false -> repaint=true
+[ 46.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.400] step sand=true level=false shimmer=false released=0 sec=161 toast=false -> repaint=true
+[ 46.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.500] step sand=true level=false shimmer=false released=0 sec=161 toast=false -> repaint=true
+[ 46.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.600] step sand=true level=false shimmer=false released=0 sec=161 toast=false -> repaint=true
+[ 46.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.700] step sand=true level=false shimmer=false released=0 sec=160 toast=false -> repaint=true
+[ 46.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.800] step sand=true level=false shimmer=false released=0 sec=160 toast=false -> repaint=true
+[ 46.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 46.900] step sand=true level=false shimmer=false released=0 sec=160 toast=false -> repaint=true
+[ 46.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.000] step sand=true level=false shimmer=true released=0 sec=160 toast=false -> repaint=true
+[ 47.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.100] step sand=true level=false shimmer=false released=0 sec=160 toast=false -> repaint=true
+[ 47.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.200] step sand=true level=false shimmer=false released=0 sec=160 toast=false -> repaint=true
+[ 47.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.300] step sand=false level=false shimmer=false released=0 sec=160 toast=false -> repaint=false
+[ 47.400] step sand=false level=false shimmer=false released=0 sec=160 toast=false -> repaint=false
+[ 47.500] step sand=false level=false shimmer=false released=0 sec=160 toast=false -> repaint=false
+[ 47.600] step sand=false level=false shimmer=false released=0 sec=160 toast=false -> repaint=false
+[ 47.700] step sand=true level=true shimmer=false released=1 sec=159 toast=false -> repaint=true
+[ 47.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.800] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 47.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 47.900] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 47.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.000] step sand=true level=false shimmer=true released=0 sec=159 toast=false -> repaint=true
+[ 48.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.100] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.200] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.300] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.400] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.500] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.600] step sand=true level=false shimmer=false released=0 sec=159 toast=false -> repaint=true
+[ 48.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.700] step sand=false level=false shimmer=false released=0 sec=158 toast=false -> repaint=true
+[ 48.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 48.800] step sand=false level=false shimmer=false released=0 sec=158 toast=false -> repaint=false
+[ 48.900] step sand=false level=false shimmer=false released=0 sec=158 toast=false -> repaint=false
+[ 48.999] step sand=false level=false shimmer=true released=0 sec=158 toast=false -> repaint=true
+[ 49.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.100] step sand=false level=false shimmer=false released=0 sec=158 toast=false -> repaint=false
+[ 49.200] step sand=false level=false shimmer=false released=0 sec=158 toast=false -> repaint=false
+[ 49.300] step sand=true level=true shimmer=false released=1 sec=158 toast=false -> repaint=true
+[ 49.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.400] step sand=true level=false shimmer=false released=0 sec=158 toast=false -> repaint=true
+[ 49.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.500] step sand=true level=false shimmer=false released=0 sec=158 toast=false -> repaint=true
+[ 49.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.600] step sand=true level=false shimmer=false released=0 sec=158 toast=false -> repaint=true
+[ 49.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.700] step sand=true level=false shimmer=false released=0 sec=157 toast=false -> repaint=true
+[ 49.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.800] step sand=true level=false shimmer=false released=0 sec=157 toast=false -> repaint=true
+[ 49.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 49.899] step sand=true level=false shimmer=false released=0 sec=157 toast=false -> repaint=true
+[ 49.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 50.000] step sand=true level=false shimmer=true released=0 sec=157 toast=false -> repaint=true
+[ 50.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 50.100] step sand=true level=false shimmer=false released=0 sec=157 toast=false -> repaint=true
+[ 50.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 50.200] step sand=false level=false shimmer=false released=0 sec=157 toast=false -> repaint=false
+[ 50.300] step sand=false level=false shimmer=false released=0 sec=157 toast=false -> repaint=false
+[ 50.400] step sand=false level=false shimmer=false released=0 sec=157 toast=false -> repaint=false
+[ 50.500] step sand=false level=false shimmer=false released=0 sec=157 toast=false -> repaint=false
+[ 50.600] step sand=false level=false shimmer=false released=0 sec=157 toast=false -> repaint=false
+[ 50.700] step sand=false level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 50.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 50.800] step sand=true level=true shimmer=false released=1 sec=156 toast=false -> repaint=true
+[ 50.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 50.900] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 50.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.000] step sand=true level=false shimmer=true released=0 sec=156 toast=false -> repaint=true
+[ 51.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.100] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.200] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.300] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.400] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.500] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.600] step sand=true level=false shimmer=false released=0 sec=156 toast=false -> repaint=true
+[ 51.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.700] step sand=false level=false shimmer=false released=0 sec=155 toast=false -> repaint=true
+[ 51.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 51.800] step sand=false level=false shimmer=false released=0 sec=155 toast=false -> repaint=false
+[ 51.900] step sand=false level=false shimmer=false released=0 sec=155 toast=false -> repaint=false
+[ 52.000] step sand=false level=false shimmer=true released=0 sec=155 toast=false -> repaint=true
+[ 52.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.103] step sand=false level=false shimmer=false released=0 sec=155 toast=false -> repaint=false
+[ 52.200] step sand=false level=false shimmer=false released=0 sec=155 toast=false -> repaint=false
+[ 52.300] step sand=true level=false shimmer=false released=1 sec=155 toast=false -> repaint=true
+[ 52.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.400] step sand=true level=false shimmer=false released=0 sec=155 toast=false -> repaint=true
+[ 52.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.500] step sand=true level=false shimmer=false released=0 sec=155 toast=false -> repaint=true
+[ 52.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.600] step sand=true level=false shimmer=false released=0 sec=155 toast=false -> repaint=true
+[ 52.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.700] step sand=true level=false shimmer=false released=0 sec=154 toast=false -> repaint=true
+[ 52.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.800] step sand=true level=false shimmer=false released=0 sec=154 toast=false -> repaint=true
+[ 52.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 52.900] step sand=true level=false shimmer=false released=0 sec=154 toast=false -> repaint=true
+[ 52.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 53.000] step sand=true level=false shimmer=false released=0 sec=154 toast=false -> repaint=true
+[ 53.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 53.099] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.200] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.300] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.399] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.500] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.600] step sand=false level=false shimmer=false released=0 sec=154 toast=false -> repaint=false
+[ 53.700] step sand=false level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 53.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 53.800] step sand=false level=false shimmer=false released=0 sec=153 toast=false -> repaint=false
+[ 53.900] step sand=true level=true shimmer=false released=1 sec=153 toast=false -> repaint=true
+[ 53.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.000] step sand=true level=false shimmer=true released=0 sec=153 toast=false -> repaint=true
+[ 54.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.100] step sand=true level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 54.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.199] step sand=true level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 54.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.300] step sand=true level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 54.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.400] step sand=true level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 54.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.500] step sand=true level=false shimmer=false released=0 sec=153 toast=false -> repaint=true
+[ 54.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.600] step sand=false level=false shimmer=false released=0 sec=153 toast=false -> repaint=false
+[ 54.700] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=true
+[ 54.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 54.800] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 54.900] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 55.000] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 55.099] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 55.200] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 55.300] step sand=false level=false shimmer=false released=0 sec=152 toast=false -> repaint=false
+[ 55.400] step sand=true level=true shimmer=false released=1 sec=152 toast=false -> repaint=true
+[ 55.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.500] step sand=true level=false shimmer=false released=0 sec=152 toast=false -> repaint=true
+[ 55.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.599] step sand=true level=false shimmer=false released=0 sec=152 toast=false -> repaint=true
+[ 55.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.700] step sand=true level=false shimmer=false released=0 sec=151 toast=false -> repaint=true
+[ 55.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.800] step sand=true level=false shimmer=false released=0 sec=151 toast=false -> repaint=true
+[ 55.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.900] step sand=true level=false shimmer=false released=0 sec=151 toast=false -> repaint=true
+[ 55.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 55.999] step sand=false level=false shimmer=true released=0 sec=151 toast=false -> repaint=true
+[ 56.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 56.104] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.200] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.300] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.400] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.500] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.600] step sand=false level=false shimmer=false released=0 sec=151 toast=false -> repaint=false
+[ 56.699] step sand=false level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 56.699] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 56.800] step sand=false level=false shimmer=false released=0 sec=150 toast=false -> repaint=false
+[ 56.899] step sand=true level=false shimmer=false released=1 sec=150 toast=false -> repaint=true
+[ 56.899] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.000] step sand=true level=false shimmer=true released=0 sec=150 toast=false -> repaint=true
+[ 57.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.099] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.200] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.300] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.400] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.500] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.600] step sand=true level=false shimmer=false released=0 sec=150 toast=false -> repaint=true
+[ 57.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.700] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=true
+[ 57.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 57.800] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 57.900] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 58.000] step sand=false level=false shimmer=true released=0 sec=149 toast=false -> repaint=true
+[ 58.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.100] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 58.200] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 58.300] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 58.400] step sand=false level=false shimmer=false released=0 sec=149 toast=false -> repaint=false
+[ 58.500] step sand=true level=false shimmer=false released=1 sec=149 toast=false -> repaint=true
+[ 58.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.600] step sand=true level=false shimmer=false released=0 sec=149 toast=false -> repaint=true
+[ 58.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.700] step sand=true level=false shimmer=false released=0 sec=148 toast=false -> repaint=true
+[ 58.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.800] step sand=true level=false shimmer=false released=0 sec=148 toast=false -> repaint=true
+[ 58.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.899] step sand=true level=false shimmer=false released=0 sec=148 toast=false -> repaint=true
+[ 58.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 58.999] step sand=true level=false shimmer=true released=0 sec=148 toast=false -> repaint=true
+[ 59.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 59.100] step sand=true level=false shimmer=false released=0 sec=148 toast=false -> repaint=true
+[ 59.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 59.200] step sand=false level=false shimmer=false released=0 sec=148 toast=false -> repaint=false
+[ 59.300] step sand=false level=false shimmer=false released=0 sec=148 toast=false -> repaint=false
+[ 59.400] step sand=false level=false shimmer=false released=0 sec=148 toast=false -> repaint=false
+[ 59.500] step sand=false level=false shimmer=false released=0 sec=148 toast=false -> repaint=false
+[ 59.600] step sand=false level=false shimmer=false released=0 sec=148 toast=false -> repaint=false
+[ 59.700] step sand=false level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 59.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 59.800] step sand=false level=false shimmer=false released=0 sec=147 toast=false -> repaint=false
+[ 59.900] step sand=false level=false shimmer=false released=0 sec=147 toast=false -> repaint=false
+[ 60.000] step sand=true level=false shimmer=true released=1 sec=147 toast=false -> repaint=true
+[ 60.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.100] step sand=true level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 60.106] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.200] step sand=true level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 60.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.300] step sand=true level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 60.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.400] step sand=true level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 60.401] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.500] step sand=true level=false shimmer=false released=0 sec=147 toast=false -> repaint=true
+[ 60.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.600] step sand=false level=false shimmer=false released=0 sec=147 toast=false -> repaint=false
+[ 60.700] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=true
+[ 60.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 60.800] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 60.900] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.000] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.099] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.200] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.300] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.399] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.500] step sand=false level=false shimmer=false released=0 sec=146 toast=false -> repaint=false
+[ 61.600] step sand=true level=false shimmer=false released=1 sec=146 toast=false -> repaint=true
+[ 61.601] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 61.700] step sand=true level=false shimmer=false released=0 sec=145 toast=false -> repaint=true
+[ 61.701] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 61.800] step sand=true level=false shimmer=false released=0 sec=145 toast=false -> repaint=true
+[ 61.801] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 61.900] step sand=true level=false shimmer=false released=0 sec=145 toast=false -> repaint=true
+[ 61.901] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 62.000] step sand=true level=false shimmer=true released=0 sec=145 toast=false -> repaint=true
+[ 62.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 62.100] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.200] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.300] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.399] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.500] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.600] step sand=false level=false shimmer=false released=0 sec=145 toast=false -> repaint=false
+[ 62.700] step sand=false level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 62.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 62.800] step sand=false level=false shimmer=false released=0 sec=144 toast=false -> repaint=false
+[ 62.900] step sand=false level=false shimmer=false released=0 sec=144 toast=false -> repaint=false
+[ 62.999] step sand=false level=false shimmer=true released=0 sec=144 toast=false -> repaint=true
+[ 62.999] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.099] step sand=true level=false shimmer=false released=1 sec=144 toast=false -> repaint=true
+[ 63.099] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.200] step sand=true level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 63.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.299] step sand=true level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 63.299] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.400] step sand=true level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 63.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.500] step sand=true level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 63.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.600] step sand=true level=false shimmer=false released=0 sec=144 toast=false -> repaint=true
+[ 63.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.700] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 63.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.799] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 63.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 63.900] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 63.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.000] step sand=true level=false shimmer=true released=0 sec=143 toast=false -> repaint=true
+[ 64.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.099] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 64.105] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.200] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 64.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.300] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 64.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.399] step sand=true level=false shimmer=false released=0 sec=143 toast=false -> repaint=true
+[ 64.399] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.500] step sand=false level=false shimmer=false released=0 sec=143 toast=false -> repaint=false
+[ 64.600] step sand=true level=false shimmer=false released=1 sec=143 toast=false -> repaint=true
+[ 64.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.700] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 64.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.800] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 64.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 64.900] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 64.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.000] step sand=true level=false shimmer=true released=0 sec=142 toast=false -> repaint=true
+[ 65.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.099] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.099] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.200] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.300] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.400] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.500] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.600] step sand=true level=false shimmer=false released=0 sec=142 toast=false -> repaint=true
+[ 65.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.700] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 65.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.800] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 65.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.900] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 65.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 65.999] step sand=false level=false shimmer=true released=0 sec=141 toast=false -> repaint=true
+[ 65.999] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.099] step sand=false level=false shimmer=false released=0 sec=141 toast=false -> repaint=false
+[ 66.200] step sand=true level=false shimmer=false released=1 sec=141 toast=false -> repaint=true
+[ 66.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.300] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 66.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.400] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 66.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.499] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 66.499] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.600] step sand=true level=false shimmer=false released=0 sec=141 toast=false -> repaint=true
+[ 66.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.699] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 66.699] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.799] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 66.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.899] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 66.899] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 66.999] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 66.999] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.100] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 67.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.200] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 67.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.300] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 67.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.400] step sand=true level=false shimmer=false released=0 sec=140 toast=false -> repaint=true
+[ 67.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.500] step sand=false level=false shimmer=false released=0 sec=140 toast=false -> repaint=false
+[ 67.599] step sand=false level=false shimmer=false released=0 sec=140 toast=false -> repaint=false
+[ 67.700] step sand=true level=true shimmer=false released=1 sec=139 toast=false -> repaint=true
+[ 67.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.799] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 67.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 67.899] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 67.899] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.000] step sand=true level=false shimmer=true released=0 sec=139 toast=false -> repaint=true
+[ 68.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.106] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.108] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.199] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.299] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.299] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.400] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.500] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.600] step sand=true level=false shimmer=false released=0 sec=139 toast=false -> repaint=true
+[ 68.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.700] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 68.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.799] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 68.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 68.900] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 68.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.000] step sand=false level=false shimmer=true released=0 sec=138 toast=false -> repaint=true
+[ 69.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.100] step sand=false level=false shimmer=false released=0 sec=138 toast=false -> repaint=false
+[ 69.200] step sand=false level=false shimmer=false released=0 sec=138 toast=false -> repaint=false
+[ 69.300] step sand=true level=false shimmer=false released=1 sec=138 toast=false -> repaint=true
+[ 69.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.400] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 69.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.499] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 69.499] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.600] step sand=true level=false shimmer=false released=0 sec=138 toast=false -> repaint=true
+[ 69.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.699] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 69.699] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.799] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 69.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 69.900] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 69.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.000] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 70.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.100] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 70.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.200] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 70.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.300] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 70.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.400] step sand=true level=false shimmer=false released=0 sec=137 toast=false -> repaint=true
+[ 70.404] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.499] step sand=false level=false shimmer=false released=0 sec=137 toast=false -> repaint=false
+[ 70.599] step sand=false level=false shimmer=false released=0 sec=137 toast=false -> repaint=false
+[ 70.700] step sand=false level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 70.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.799] step sand=true level=false shimmer=false released=1 sec=136 toast=false -> repaint=true
+[ 70.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 70.900] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 70.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.000] step sand=true level=false shimmer=true released=0 sec=136 toast=false -> repaint=true
+[ 71.001] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.099] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.200] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.300] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.399] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.499] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.499] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.600] step sand=true level=false shimmer=false released=0 sec=136 toast=false -> repaint=true
+[ 71.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.700] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 71.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.799] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 71.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 71.900] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 71.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.000] step sand=false level=false shimmer=true released=0 sec=135 toast=false -> repaint=true
+[ 72.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.099] step sand=false level=false shimmer=false released=0 sec=135 toast=false -> repaint=false
+[ 72.199] step sand=false level=false shimmer=false released=0 sec=135 toast=false -> repaint=false
+[ 72.300] step sand=true level=true shimmer=false released=1 sec=135 toast=false -> repaint=true
+[ 72.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.400] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 72.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.500] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 72.501] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.600] step sand=true level=false shimmer=false released=0 sec=135 toast=false -> repaint=true
+[ 72.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.699] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 72.699] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.799] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 72.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.899] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 72.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 72.999] step sand=true level=false shimmer=true released=0 sec=134 toast=false -> repaint=true
+[ 73.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.100] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 73.101] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.200] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 73.201] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.300] step sand=true level=false shimmer=false released=0 sec=134 toast=false -> repaint=true
+[ 73.301] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.399] step sand=false level=false shimmer=false released=0 sec=134 toast=false -> repaint=false
+[ 73.500] step sand=false level=false shimmer=false released=0 sec=134 toast=false -> repaint=false
+[ 73.599] step sand=false level=false shimmer=false released=0 sec=134 toast=false -> repaint=false
+[ 73.699] step sand=false level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 73.699] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.800] step sand=false level=false shimmer=false released=0 sec=133 toast=false -> repaint=false
+[ 73.899] step sand=true level=true shimmer=false released=1 sec=133 toast=false -> repaint=true
+[ 73.900] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 73.998] step sand=true level=false shimmer=true released=0 sec=133 toast=false -> repaint=true
+[ 73.999] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.099] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.100] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.199] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.200] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.299] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.300] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.400] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.499] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.500] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.600] step sand=true level=false shimmer=false released=0 sec=133 toast=false -> repaint=true
+[ 74.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.700] step sand=true level=false shimmer=false released=0 sec=132 toast=false -> repaint=true
+[ 74.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.799] step sand=true level=false shimmer=false released=0 sec=132 toast=false -> repaint=true
+[ 74.800] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 74.900] step sand=false level=false shimmer=false released=0 sec=132 toast=false -> repaint=false
+[ 75.000] step sand=false level=false shimmer=true released=0 sec=132 toast=false -> repaint=true
+[ 75.000] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 75.104] step sand=false level=false shimmer=false released=0 sec=132 toast=false -> repaint=false
+[ 75.199] step sand=false level=false shimmer=false released=0 sec=132 toast=false -> repaint=false
+[ 75.300] step sand=false level=false shimmer=false released=0 sec=132 toast=false -> repaint=false
+[ 75.400] step sand=true level=true shimmer=false released=1 sec=132 toast=false -> repaint=true
+[ 75.400] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 75.498] step sand=true level=false shimmer=false released=0 sec=132 toast=false -> repaint=true
+[ 75.499] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 75.600] step sand=true level=false shimmer=false released=0 sec=132 toast=false -> repaint=true
+[ 75.600] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 75.700] step sand=true level=false shimmer=false released=0 sec=131 toast=false -> repaint=true
+[ 75.700] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U
+[ 75.799] step sand=true level=false shimmer=false released=0 sec=131 toast=false -> repaint=true
+[ 75.799] draw dirty=270.0x437.0@0.0,-32.0 bounds=270.0x405.0@0.0,0.0 grid=31x29 scale=2.0 screen=BenQ MA270U

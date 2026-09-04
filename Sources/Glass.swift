@@ -38,6 +38,8 @@ final class GlassView: NSView {
     // the new orientation and left to collapse.
     private var turnAngle: Double = 0
     private var turnTimer: Timer?
+    private var ticks = 0
+    private var lastSecond = -1
 
     // The joining toast: shown when pomodoro mode comes on, so it is obvious
     // you just stepped into a slot that was already running on the clock.
@@ -75,6 +77,19 @@ final class GlassView: NSView {
                       height: CGFloat(rows) * cell.height + timeStrip + 1)
     }
 
+    // TIMETURNER_TRACE=1 in the environment logs what the view is doing to
+    // stderr, for chasing a repaint that only misbehaves on one screen.
+    private static let tracing = ProcessInfo.processInfo.environment["TIMETURNER_TRACE"] != nil
+    private static var traceStart = Date()
+    static func trace(_ message: @autoclosure () -> String) {
+        guard tracing else { return }
+        let t = String(format: "%7.3f", Date().timeIntervalSince(traceStart))
+        FileHandle.standardError.write(Data("[\(t)] \(message())\n".utf8))
+    }
+    static func brief(_ r: NSRect) -> String {
+        String(format: "%.1fx%.1f@%.1f,%.1f", r.width, r.height, r.origin.x, r.origin.y)
+    }
+
     override var isFlipped: Bool { true }
 
     // draw() fills every pixel of the view before anything else, so AppKit
@@ -94,6 +109,13 @@ final class GlassView: NSView {
         layerContentsRedrawPolicy = .onSetNeedsDisplay
         layer?.isOpaque = true
         layer?.contentsScale = window?.backingScaleFactor ?? 2
+        // Core Animation cross fades a layer's contents by default. On a view
+        // that repaints itself all day that fade is the blink: every repaint
+        // dissolves the old glass into the new one. The sand should move,
+        // not the picture.
+        layer?.actions = ["contents": NSNull(), "bounds": NSNull(),
+                          "position": NSNull(), "onOrderIn": NSNull(),
+                          "onOrderOut": NSNull(), "sublayers": NSNull()]
         guard timer == nil else { return }
         cellSize = Self.cellMetrics()
         rebuild()
@@ -109,6 +131,8 @@ final class GlassView: NSView {
     // catch up, which reads as a flash.
     override func viewDidChangeBackingProperties() {
         super.viewDidChangeBackingProperties()
+        Self.trace("backingPropertiesChanged scale=\(window?.backingScaleFactor ?? 0)"
+                   + " screen=\(window?.screen?.localizedName ?? "none")")
         layer?.contentsScale = window?.backingScaleFactor ?? 2
         needsDisplay = true
     }
@@ -116,7 +140,25 @@ final class GlassView: NSView {
     override func setFrameSize(_ newSize: NSSize) {
         super.setFrameSize(newSize)
         guard cellSize.width > 1 else { return }
-        if grid.isEmpty { rebuild() } else { reshape() }
+        if grid.isEmpty { rebuild(); return }
+        // A move between screens can hand back the size we already have. The
+        // glass is only rebuilt when the grid it implies actually differs,
+        // so a no-op resize cannot churn the sand.
+        let (c, r) = Self.gridSize(for: bounds, cell: cellSize, strip: timeStrip)
+        Self.trace("setFrameSize \(Self.brief(NSRect(origin: .zero, size: newSize)))"
+                   + " grid \(cols)x\(rows) -> \(c)x\(r)"
+                   + (c != cols || r != rows ? " RESHAPE" : " (no-op)"))
+        guard c != cols || r != rows else { return }
+        reshape()
+    }
+
+    // The grid the given bounds imply. Kept in one place so setFrameSize can
+    // ask the question without building anything.
+    static func gridSize(for bounds: NSRect, cell: CGSize, strip: CGFloat) -> (Int, Int) {
+        var c = max(Int(bounds.width / cell.width), 15)
+        let r = max(Int((bounds.height - strip) / cell.height), 11)
+        if c % 2 == 0 { c -= 1 }
+        return (c, r)
     }
 
     // MARK: - Building the glass
@@ -132,9 +174,7 @@ final class GlassView: NSView {
     }
 
     private func buildWalls() {
-        cols = max(Int(bounds.width / cellSize.width), 15)
-        rows = max(Int((bounds.height - timeStrip) / cellSize.height), 11)
-        if cols % 2 == 0 { cols -= 1 } // odd width keeps the neck centered
+        (cols, rows) = Self.gridSize(for: bounds, cell: cellSize, strip: timeStrip)
         waistRow = rows / 2
         neckCol = cols / 2
 
@@ -365,6 +405,9 @@ final class GlassView: NSView {
         // One falling-sand sweep, bottom-up so a grain moves once per tick.
         // The neck is a gate: it only opens while the hour says a grain is due.
         var released = 0
+        var moved = false
+        var moveCount = 0
+        var diagonalCount = 0
         let gateCap = demo ? 3 : 2
         for r in stride(from: rows - 2, through: 1, by: -1) {
             for c in interior[r].shuffled() {
@@ -373,7 +416,12 @@ final class GlassView: NSView {
                 let sides = Bool.random() ? [c - 1, c + 1] : [c + 1, c - 1]
                 if open(r + 1, c) {
                     target = (r + 1, c)
-                } else if let s = sides.first(where: { open(r + 1, $0) }) {
+                } else if let s = sides.first(where: { open(r + 1, $0) && open(r, $0) }) {
+                    // A grain can only roll into a column it could actually
+                    // reach: the cell beside it has to be free too. Without
+                    // that it squeezes diagonally between two packed
+                    // neighbours, and a finished pile never stops repacking
+                    // itself, one grain a tick, forever.
                     target = (r + 1, s)
                 }
                 if let (tr, tc) = target {
@@ -384,19 +432,48 @@ final class GlassView: NSView {
                     }
                     grid[tr][tc] = grid[r][c]
                     grid[r][c] = .empty
+                    moved = true
+                    moveCount += 1
+                    if tr != r + 1 || tc != c { diagonalCount += 1 }
                 }
             }
         }
 
-        levelTopChamber()
+        let sandMoved = moved
+        let levelled = levelTopChamber()
+        if levelled { moved = true }
 
         // A little shimmer in the resting piles, so the sand reads as alive.
-        for _ in 0..<2 {
-            let r = Int.random(in: 1..<rows - 1)
-            guard let c = interior[r].randomElement(), case .sand = grid[r][c] else { continue }
-            grid[r][c] = .sand(grainSet.randomElement()!)
+        // An hour glass drops a grain every ten seconds or so, so this is
+        // most of what there is to see; once a second is plenty, and it
+        // keeps a resting glass from repainting itself ten times a second.
+        ticks += 1
+        var shimmered = false
+        if ticks % (demo ? 4 : 10) == 0 {
+            for _ in 0..<2 {
+                let r = Int.random(in: 1..<rows - 1)
+                guard let c = interior[r].randomElement(), case .sand = grid[r][c] else { continue }
+                grid[r][c] = .sand(grainSet.randomElement()!)
+                shimmered = true
+                moved = true
+            }
         }
-        needsDisplay = true
+
+        // The digits tick over once a second and the toast fades on its own,
+        // so both ask for their own repaints. Everything else waits for the
+        // sand to actually move.
+        let secondsLeft = Int(max(0, currentPhase().remaining))
+        if secondsLeft != lastSecond {
+            lastSecond = secondsLeft
+            moved = true
+        }
+        if toast != nil { moved = true }
+
+        Self.trace("step moves=\(moveCount) diag=\(diagonalCount)"
+                   + " level=\(levelled) shimmer=\(shimmered)"
+                   + " released=\(released) sec=\(secondsLeft) toast=\(toast != nil)"
+                   + " -> repaint=\(moved)")
+        if moved { needsDisplay = true }
     }
 
     // Real sand keeps a level surface. In a wide window the funnel walls
@@ -404,8 +481,8 @@ final class GlassView: NSView {
     // the corner ledges forever; this pass lets the high spots flow sideways,
     // a few grains a tick, until no column in the top chamber stands more
     // than a grain above its neighbor.
-    private func levelTopChamber() {
-        guard waistRow > 2 else { return }
+    private func levelTopChamber() -> Bool {
+        guard waistRow > 2 else { return false }
         var surface = [Int?](repeating: nil, count: cols) // topmost sand row
         var landing = [Int?](repeating: nil, count: cols) // where a grain would rest
         for r in 1..<waistRow {
@@ -445,13 +522,19 @@ final class GlassView: NSView {
             }
             moves -= 1
         }
+        return moves < 6
     }
 
     // MARK: - Drawing
 
     override func draw(_ dirtyRect: NSRect) {
+        Self.trace("draw dirty=\(Self.brief(dirtyRect)) bounds=\(Self.brief(bounds))"
+                   + " grid=\(cols)x\(rows) scale=\(window?.backingScaleFactor ?? 0)"
+                   + " screen=\(window?.screen?.localizedName ?? "none")")
         NSColor.textBackgroundColor.setFill()
-        bounds.fill()
+        // The invalidated area can reach past the view's own bounds; an
+        // opaque view has to leave none of it unpainted.
+        dirtyRect.union(bounds).fill()
         guard rows > 0 else { return }
 
         let wallAttrs: [NSAttributedString.Key: Any] =
