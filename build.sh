@@ -7,7 +7,7 @@ set -euo pipefail
 
 NAME="TimeTurner"
 BUNDLE_ID="dev.aaronpeabody.timeturner"
-VERSION="1.2"
+VERSION="1.3"
 
 cd "$(dirname "$0")"
 APP="build/$NAME.app"
