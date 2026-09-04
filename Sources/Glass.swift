@@ -6,7 +6,23 @@ import AppKit
 // full hour really takes an hour to drain. Everything is a plain falling-sand
 // simulation over a character grid sized to the window.
 
+// A layer that refuses every implicit animation. Setting the actions
+// dictionary on the view's layer is not enough on its own: AppKit can hand
+// the view a fresh backing layer, and the replacement arrives with Core
+// Animation's defaults, which cross fade the contents on every repaint.
+// Owning the layer is the only way to be sure it never fades.
+private final class StillLayer: CALayer {
+    override func action(forKey event: String) -> CAAction? { NSNull() }
+}
+
 final class GlassView: NSView {
+    override func makeBackingLayer() -> CALayer {
+        let layer = StillLayer()
+        layer.isOpaque = true
+        layer.actions = ["contents": NSNull()]
+        return layer
+    }
+
     private enum Cell {
         case empty
         case wall(Character)
@@ -79,7 +95,7 @@ final class GlassView: NSView {
 
     // TIMETURNER_TRACE=1 in the environment logs what the view is doing to
     // stderr, for chasing a repaint that only misbehaves on one screen.
-    private static let tracing = ProcessInfo.processInfo.environment["TIMETURNER_TRACE"] != nil
+    static let tracing = ProcessInfo.processInfo.environment["TIMETURNER_TRACE"] != nil
     private static var traceStart = Date()
     static func trace(_ message: @autoclosure () -> String) {
         guard tracing else { return }
@@ -119,6 +135,7 @@ final class GlassView: NSView {
         guard timer == nil else { return }
         cellSize = Self.cellMetrics()
         rebuild()
+        if ProcessInfo.processInfo.environment["TIMETURNER_FREEZE"] != nil { return }
         timer = Timer.scheduledTimer(withTimeInterval: demo ? 0.05 : 0.1,
                                      repeats: true) { [weak self] _ in
             guard let self, self.window?.isVisible == true else { return }
@@ -531,6 +548,13 @@ final class GlassView: NSView {
         Self.trace("draw dirty=\(Self.brief(dirtyRect)) bounds=\(Self.brief(bounds))"
                    + " grid=\(cols)x\(rows) scale=\(window?.backingScaleFactor ?? 0)"
                    + " screen=\(window?.screen?.localizedName ?? "none")")
+        if Self.tracing {
+            let c = NSColor.textBackgroundColor.usingColorSpace(.deviceRGB)
+            Self.trace(String(format: "  fill=%.0f appearance=%@ key=%@",
+                              (c?.redComponent ?? 0) * 255,
+                              effectiveAppearance.name.rawValue,
+                              String(describing: window?.isKeyWindow ?? false)))
+        }
         NSColor.textBackgroundColor.setFill()
         // The invalidated area can reach past the view's own bounds; an
         // opaque view has to leave none of it unpainted.
