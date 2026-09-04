@@ -34,6 +34,11 @@ final class GlassView: NSView {
     private let timeStrip = GlassView.timeStrip
     private let timeFont = NSFont.monospacedDigitSystemFont(ofSize: 27, weight: .ultraLight)
 
+    // The turn: the whole glass rotates, frozen, then the sand is handed to
+    // the new orientation and left to collapse.
+    private var turnAngle: Double = 0
+    private var turnTimer: Timer?
+
     // The joining toast: shown when pomodoro mode comes on, so it is obvious
     // you just stepped into a slot that was already running on the clock.
     private var toast: String?
@@ -240,6 +245,73 @@ final class GlassView: NSView {
         needsDisplay = true
     }
 
+    // MARK: - Turning the glass over
+
+    // The glass rotates as one piece, frozen, the way a real one does in your
+    // hand: the sand is held by friction while it swings, not poured.
+    private func startTurn() {
+        turnTimer?.invalidate()
+        let start = Date()
+        let duration = demo ? 0.6 : 0.9
+        turnTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / 30,
+                                         repeats: true) { [weak self] timer in
+            guard let self else { timer.invalidate(); return }
+            let t = min(1, Date().timeIntervalSince(start) / duration)
+            self.turnAngle = (t * t * (3 - 2 * t)) * 180
+            self.needsDisplay = true
+            if t >= 1 {
+                timer.invalidate()
+                self.turnTimer = nil
+                self.turnAngle = 0
+                self.invert()
+                self.needsDisplay = true
+            }
+        }
+    }
+
+    // Hands the sand to the new orientation. A 180 degree turn maps every
+    // cell to its opposite, row r to rows - 1 - r and column c to
+    // cols - 1 - c, and the glass is built symmetrically, so walls land on
+    // walls. What lands in the top chamber is the bottom pile upside down: a
+    // cone balanced on its point, which is exactly as unstable as it sounds.
+    // The simulation collapses and levels it over the next second, which is
+    // what real sand does the moment you set a flipped hourglass down.
+    private func invert() {
+        var carried: [(Int, Int)] = []
+        for r in 0..<rows {
+            for c in 0..<cols {
+                if case .sand = grid[r][c] {
+                    carried.append((rows - 1 - r, cols - 1 - c))
+                }
+            }
+        }
+
+        buildWalls()
+
+        var homeless = 0
+        for (r, c) in carried {
+            guard r >= 0, r < rows, interior[r].contains(c),
+                  case .empty = grid[r][c] else { homeless += 1; continue }
+            grid[r][c] = .sand(grainSet.randomElement()!)
+        }
+        // Rounding at the walls can strand a grain or two; drop them in the
+        // top chamber rather than losing sand across the turn.
+        if homeless > 0 {
+            var free: [(Int, Int)] = []
+            for r in 1..<waistRow {
+                for c in interior[r] {
+                    if case .empty = grid[r][c] { free.append((r, c)) }
+                }
+            }
+            for (r, c) in free.shuffled().prefix(homeless) {
+                grid[r][c] = .sand(grainSet.randomElement()!)
+            }
+        }
+
+        total = (1..<waistRow).reduce(0) { $0 + interior[$1].count }
+        passed = min(total, Int(currentPhase().fraction * Double(total)))
+    }
+
     // MARK: - The simulation
 
     private func open(_ r: Int, _ c: Int) -> Bool {
@@ -251,10 +323,15 @@ final class GlassView: NSView {
     func step() {
         let cyc = currentPhase().cycle
         if cyc != cycle {
+            // One boundary crossed while watching earns the animation. A
+            // bigger jump means the window was closed or the Mac asleep
+            // through it, so there is nothing to animate: just be right.
+            let jumped = cyc - cycle != 1
             cycle = cyc
-            rebuild() // the turn: a fresh glass, top bulb full again
+            if jumped { rebuild() } else { startTurn() }
             return
         }
+        if turnTimer != nil { return } // the turn owns the glass while it runs
         let expected = min(total, Int(currentPhase().fraction * Double(total)))
         if expected - passed > 30 {
             rebuild() // slept through a stretch; reseat rather than fast-forward
@@ -360,6 +437,33 @@ final class GlassView: NSView {
 
         let x0 = (bounds.width - CGFloat(cols) * cellSize.width) / 2
         let y0 = (bounds.height - timeStrip - CGFloat(rows) * cellSize.height) / 2
+
+        // Mid-turn the whole glass is drawn rotated about its own center. The
+        // characters are centrally symmetric, so a rotated glass is still a
+        // glass: \ stays \, / stays /, = stays =, and ( becomes the ) that
+        // belongs on the far side of the neck.
+        let ctx = NSGraphicsContext.current?.cgContext
+        if turnAngle != 0 {
+            let w = CGFloat(cols) * cellSize.width
+            let h = CGFloat(rows) * cellSize.height
+            let gx = x0 + w / 2
+            let gy = y0 + h / 2
+            // A rotating rectangle sweeps a bigger box than it occupies at
+            // rest, so the glass is scaled to whatever still fits and grows
+            // back to full size as it lands. It reads as the glass receding
+            // a little while it turns, the way one does in your hand.
+            let radians = CGFloat(turnAngle) * .pi / 180
+            let sweptW = abs(w * cos(radians)) + abs(h * sin(radians))
+            let sweptH = abs(w * sin(radians)) + abs(h * cos(radians))
+            let fit = min(bounds.width / sweptW,
+                          (bounds.height - timeStrip) / sweptH, 1)
+            ctx?.saveGState()
+            ctx?.translateBy(x: gx, y: gy)
+            ctx?.rotate(by: radians)
+            ctx?.scaleBy(x: fit, y: fit)
+            ctx?.translateBy(x: -gx, y: -gy)
+        }
+
         for r in 0..<rows {
             let line = NSMutableAttributedString()
             for c in 0..<cols {
@@ -371,6 +475,8 @@ final class GlassView: NSView {
             }
             line.draw(at: NSPoint(x: x0, y: y0 + CGFloat(r) * cellSize.height))
         }
+
+        if turnAngle != 0 { ctx?.restoreGState() } // the countdown stays upright
 
         // The countdown, centered in the strip under the glass. Break time
         // draws dimmer, so the color of the number is the color of the hour.
