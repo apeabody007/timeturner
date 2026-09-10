@@ -111,6 +111,7 @@ func hourglassImage(fraction: Double, angle: Double, muted: Bool = false) -> NSI
 // the top of the hour.
 if arguments.first == "--render" {
     let dir = URL(fileURLWithPath: arguments.count > 1 ? arguments[1] : ".")
+    try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
     let frames: [(String, Double, Double)] = [
         ("f000", 0.00, 0), ("f025", 0.25, 0), ("f050", 0.50, 0),
         ("f075", 0.75, 0), ("f100", 1.00, 0),
@@ -130,8 +131,15 @@ if arguments.first == "--render" {
         hourglassImage(fraction: fraction, angle: angle)
             .draw(in: NSRect(x: 0, y: 0, width: pixels, height: pixels))
         NSGraphicsContext.restoreGraphicsState()
-        if let png = rep.representation(using: .png, properties: [:]) {
-            try? png.write(to: dir.appendingPathComponent("\(name).png"))
+        guard let png = rep.representation(using: .png, properties: [:]) else { continue }
+        let file = dir.appendingPathComponent("\(name).png")
+        do {
+            try png.write(to: file)
+        } catch {
+            // Writing nothing and exiting 0 is the worst of both worlds: it
+            // looks like it worked right up until you go looking for the file.
+            FileHandle.standardError.write(Data("could not write \(file.path): \(error)\n".utf8))
+            exit(1)
         }
     }
     exit(0)
