@@ -158,6 +158,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var noiseOn = UserDefaults.standard.bool(forKey: "noise")
     private var pinItem: NSMenuItem!
     private var pinned = UserDefaults.standard.bool(forKey: "pinned")
+    private var goldenSandItem: NSMenuItem!
+    private var goldenSand = UserDefaults.standard.bool(forKey: "goldenSand")
     private var tick: Timer?
     private var turning: Timer?
     private var lastCycle = currentPhase().cycle
@@ -263,6 +265,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                              action: #selector(togglePin), keyEquivalent: "")
         pinItem.target = self
         menu.addItem(pinItem)
+
+        goldenSandItem = NSMenuItem(title: "Golden Sand",
+                                    action: #selector(toggleGoldenSand), keyEquivalent: "")
+        goldenSandItem.target = self
+        menu.addItem(goldenSandItem)
         menu.addItem(.separator())
 
         pomodoroItem = NSMenuItem(title: "Pomodoro Mode",
@@ -317,6 +324,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         pomodoroItem.state = pomodoro ? .on : .off
         noiseItem.state = noiseOn ? .on : .off
         pinItem.state = pinned ? .on : .off
+        goldenSandItem.state = goldenSand ? .on : .off
         loginItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
         // Checked while the glass sits at its ideal size; a closed window
         // counts, since it will open at the default.
@@ -484,6 +492,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         pinned.toggle()
         UserDefaults.standard.set(pinned, forKey: "pinned")
         glassWindow?.level = pinned ? .floating : .normal
+    }
+
+    @objc private func toggleGoldenSand() {
+        goldenSand.toggle()
+        UserDefaults.standard.set(goldenSand, forKey: "goldenSand")
+        glassWindow?.contentView?.needsDisplay = true
     }
 
     @objc private func toggleLogin() {

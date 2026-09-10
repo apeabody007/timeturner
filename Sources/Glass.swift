@@ -564,7 +564,10 @@ final class GlassView: NSView {
         let wallAttrs: [NSAttributedString.Key: Any] =
             [.font: font, .foregroundColor: NSColor.secondaryLabelColor]
         let sandAttrs: [NSAttributedString.Key: Any] =
-            [.font: font, .foregroundColor: NSColor.labelColor]
+            [.font: font,
+             .foregroundColor: UserDefaults.standard.bool(forKey: "goldenSand")
+                ? NSColor(red: 0.89, green: 0.75, blue: 0.50, alpha: 1)
+                : NSColor.labelColor]
 
         let x0 = (bounds.width - CGFloat(cols) * cellSize.width) / 2
         let y0 = (bounds.height - timeStrip - CGFloat(rows) * cellSize.height) / 2
