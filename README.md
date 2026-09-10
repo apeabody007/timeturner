@@ -77,8 +77,9 @@ keeps its energy down low, where it masks best and grates least over a
 long session.
 
 No dock icon, no settings beyond Launch at Login, Pomodoro Mode, Brown
-Noise, and Pin to Front, which floats the glass above every other window
-while you work. About 900 lines of Swift, no dependencies. Builds with the Xcode
+Noise, Pin to Front, which floats the glass above every other window
+while you work, and Golden Sand, which tints the grains the amber of the
+app icon. About 900 lines of Swift, no dependencies. Builds with the Xcode
 Command Line Tools alone, so you do not need a 12 GB Xcode install to
 compile it.
 
@@ -155,12 +156,12 @@ The hour is small enough to fit in a prompt, if you tell Copilot the rules
 first. This repo ships those rules so the Copilot app and Copilot CLI stay
 inside the glass instead of inventing a start button.
 
-- [`.github/copilot-instructions.md`](.github/copilot-instructions.md) — the
+- [`.github/copilot-instructions.md`](.github/copilot-instructions.md): the
   hour, the file map, and the constraints.
-- [`.github/agents/sandkeeper.agent.md`](.github/agents/sandkeeper.agent.md) —
+- [`.github/agents/sandkeeper.agent.md`](.github/agents/sandkeeper.agent.md):
   a custom agent that keeps clock math in `Clock.swift` and cycle numbers
   honest.
-- [`.github/skills/turn-the-glass/`](.github/skills/turn-the-glass/) — build,
+- [`.github/skills/turn-the-glass/`](.github/skills/turn-the-glass/): build,
   test, `--demo`, and `--render` from the CLI.
 
 In Copilot CLI, from the clone:
