@@ -71,9 +71,20 @@ compile it.
 
 ## Install
 
-Download **TimeTurner.dmg** from [the latest release](https://github.com/apeabody007/timeturner/releases/latest),
+[Download **TimeTurner.dmg**](https://github.com/apeabody007/timeturner/releases/latest/download/TimeTurner.dmg),
 open it, and drag TimeTurner to Applications. It is signed and notarized by
 Apple, so it opens without any Gatekeeper warnings.
+
+Or with Homebrew:
+
+```
+brew trust apeabody007/tap
+brew install --cask apeabody007/tap/timeturner
+```
+
+The cask installs that same notarized dmg, so nothing is compiled on your
+machine. Homebrew 6 will not load a cask from a tap you have not trusted, which
+is what the first line is for.
 
 Or build it from a clone:
 
