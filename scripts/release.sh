@@ -45,7 +45,7 @@ echo
 
 # --- Build -------------------------------------------------------------------
 
-./build.sh
+VERSION="$VERSION" ./build.sh
 
 APP="build/$NAME.app"
 rm -rf "$DIST" build/dmg
