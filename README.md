@@ -52,6 +52,19 @@ says which side of the cycle the world is on. Two small grains under the
 countdown mark the hour's two pomodoros: done `*`, running `o`, still to
 come `.`.
 
+Hover the menu bar glass and the whole hour lays itself out, one character a
+minute, in that same vocabulary: `*` spent, `o` where you are now, `.` still
+to come, `~` the break waiting for you. The menu already says how long until
+the turn in words. This says where in the hour you are, which is the part a
+sentence is bad at.
+
+<p align="center">
+<img src="docs/hour-strip.png" width="440" alt="The hover panel: a sixty character strip of the hour with tick marks at :00 :25 :30 and :55, the cursor glyph at :50, work :30 to :55 on the left and 4:23 to the break on the right">
+</p>
+
+With Pomodoro Mode off the strip is one unbroken hour, ticked at the
+quarters, counting down to the turn.
+
 ## Brown noise
 
 **Brown Noise** in the menu plays a low, even rumble, generated live sample

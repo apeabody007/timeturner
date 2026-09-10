@@ -212,10 +212,22 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private var lastCycle = currentPhase().cycle
     private var lastDrawnFraction = -1.0
     private var glassWindow: NSWindow?
+    private var stripPanel: NSPanel?
+    private var stripView: HourStripView?
+    private var hoverWork: DispatchWorkItem?
+    private var menuIsOpen = false
 
     func applicationDidFinishLaunching(_ note: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         buildMenu()
+
+        // The button keeps its menu; this only watches the pointer cross it.
+        if let button = statusItem.button {
+            let hover = StatusHoverView(frame: button.bounds)
+            hover.autoresizingMask = [.width, .height]
+            hover.onHover = { [weak self] inside in self?.hoverChanged(inside) }
+            button.addSubview(hover)
+        }
         let p = currentPhase()
         draw(fraction: p.fraction, angle: 0)
         showGlass()
@@ -233,6 +245,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     private func tock() {
+        // The strip counts down by the second, so it refreshes on every tick
+        // rather than only when the sand has visibly moved.
+        if stripPanel?.isVisible == true { stripView?.needsDisplay = true }
         guard turning == nil else { return } // the turn animation owns the icon
         let p = currentPhase()
         if p.cycle != lastCycle {
@@ -323,6 +338,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         statusItem.menu = menu
     }
 
+    func menuWillOpen(_ menu: NSMenu) {
+        menuIsOpen = true
+        hoverWork?.cancel()
+        stripPanel?.orderOut(nil)
+    }
+
+    func menuDidClose(_ menu: NSMenu) {
+        menuIsOpen = false
+    }
+
     func menuNeedsUpdate(_ menu: NSMenu) {
         let p = currentPhase()
         let head = pomodoro
@@ -411,6 +436,76 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
                 self.noise?.stop()
             }
         }
+    }
+
+    // MARK: - Menu bar hover
+
+    /// Held back briefly so sweeping the pointer along the menu bar on the way
+    /// to another icon does not flash the hour at you.
+    private func hoverChanged(_ inside: Bool) {
+        hoverWork?.cancel()
+        guard inside else {
+            stripPanel?.orderOut(nil)
+            return
+        }
+        let work = DispatchWorkItem { [weak self] in self?.showStrip() }
+        hoverWork = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35, execute: work)
+    }
+
+    private func showStrip() {
+        guard !menuIsOpen else { return } // clicking opens the menu under the same icon
+        let panel = stripPanel ?? makeStripPanel()
+        stripPanel = panel
+        stripView?.needsDisplay = true
+        positionStrip(panel)
+        panel.orderFrontRegardless()
+    }
+
+    private func makeStripPanel() -> NSPanel {
+        let view = HourStripView(frame: NSRect(origin: .zero, size: HourStripView.idealSize()))
+        stripView = view
+
+        // The frosted card every menu bar panel on this system wears.
+        let backdrop = NSVisualEffectView(frame: view.bounds)
+        backdrop.material = .popover
+        backdrop.blendingMode = .behindWindow
+        backdrop.state = .active
+        backdrop.wantsLayer = true
+        backdrop.layer?.cornerRadius = 12
+        backdrop.layer?.cornerCurve = .continuous
+        backdrop.layer?.masksToBounds = true
+        view.autoresizingMask = [.width, .height]
+        backdrop.addSubview(view)
+
+        let panel = NSPanel(contentRect: view.frame,
+                            styleMask: [.borderless, .nonactivatingPanel],
+                            backing: .buffered, defer: false)
+        panel.isFloatingPanel = true
+        panel.level = .statusBar
+        panel.collectionBehavior = [.canJoinAllSpaces, .stationary,
+                                    .fullScreenAuxiliary, .ignoresCycle]
+        panel.isOpaque = false
+        panel.backgroundColor = .clear
+        panel.hasShadow = true
+        panel.hidesOnDeactivate = false
+        // Never let the panel take the hover away from the button underneath,
+        // which would make it flicker itself in and out.
+        panel.ignoresMouseEvents = true
+        panel.contentView = backdrop
+        return panel
+    }
+
+    /// Centred under the icon, then pulled back inside the display, which is
+    /// what saves it when the icon sits hard against the right edge.
+    private func positionStrip(_ panel: NSPanel) {
+        guard let button = statusItem.button, let window = button.window else { return }
+        let icon = window.convertToScreen(button.convert(button.bounds, to: nil))
+        let size = panel.frame.size
+        let screen = NSScreen.screens.first { $0.frame.intersects(icon) } ?? NSScreen.main
+        let bounds = (screen?.frame ?? icon).insetBy(dx: 4, dy: 0)
+        let x = min(max(icon.midX - size.width / 2, bounds.minX), bounds.maxX - size.width)
+        panel.setFrameOrigin(NSPoint(x: x, y: icon.minY - size.height - 6))
     }
 
     @objc private func showGlass() {
