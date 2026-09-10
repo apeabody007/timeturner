@@ -13,7 +13,7 @@ NAME="TimeTurner"
 NOTARY_PROFILE="${NOTARY_PROFILE:-redline-notary}"
 VERSION="${1:-}"
 DIST="build/dist"
-DMG="$DIST/$NAME-$VERSION.dmg"
+DMG="$DIST/$NAME.dmg"
 
 if [[ -z "$VERSION" ]]; then
   echo "usage: ./scripts/release.sh <version>    e.g. ./scripts/release.sh 1.0" >&2
