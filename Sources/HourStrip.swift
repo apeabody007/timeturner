@@ -129,7 +129,7 @@ final class HourStripView: NSView {
         let clock = String(format: "%d:%02d", Int(remaining) / 60, Int(remaining) % 60)
         let left = pomodoro ? slotLabel(phase) : "the hour"
         let right = pomodoro
-            ? "\(clock) to the \(phase.isBreak ? "work" : "break")"
+            ? (phase.isBreak ? "\(clock) back to work" : "\(clock) to the break")
             : "\(clock) to the turn"
 
         let leftAttrs: [NSAttributedString.Key: Any] =
