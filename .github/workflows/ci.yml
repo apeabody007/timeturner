@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: swift --version
+
+      - name: Clock tests
+        run: ./build.sh test
+
+      - name: Build
+        run: ./build.sh
+
+      # The runner has no display and no menu bar, so this exercises the
+      # drawing the only way a headless machine can: render the icon frames to
+      # disk and check they actually came out.
+      - name: Render the icon frames headless
+        run: |
+          ./build/TimeTurner.app/Contents/MacOS/TimeTurner --render "$RUNNER_TEMP/frames"
+          ls -l "$RUNNER_TEMP/frames"
+          count=$(ls "$RUNNER_TEMP/frames"/*.png | wc -l | tr -d ' ')
+          [ "$count" -eq 8 ] || { echo "expected 8 frames, got $count"; exit 1; }
+
+      - name: Unknown options are refused, --help is not
+        run: |
+          ./build/TimeTurner.app/Contents/MacOS/TimeTurner --help > /dev/null
+          if ./build/TimeTurner.app/Contents/MacOS/TimeTurner --nonsense 2>/dev/null; then
+            echo "a bad option should exit non-zero"
+            exit 1
+          fi

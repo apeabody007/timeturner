@@ -2,6 +2,7 @@
 # Builds TimeTurner.app. Needs only the Xcode Command Line Tools, no full Xcode.
 #   ./build.sh            build into ./build
 #   ./build.sh install    build, then move it to /Applications and launch it
+#   ./build.sh test       run the unit tests
 #   ./build.sh icon       redraw Resources/TimeTurner.icns from tools/make-icon.swift
 set -euo pipefail
 
@@ -15,6 +16,14 @@ APP="build/$NAME.app"
 if [[ "${1:-}" == "icon" ]]; then
   swift tools/make-icon.swift
   exit 0
+fi
+
+if [[ "${1:-}" == "test" ]]; then
+  mkdir -p build/tests
+  # The test file holds top-level code, so it has to be named main.swift.
+  cp Tests/UnitTests.swift build/tests/main.swift
+  swiftc -O Sources/Clock.swift build/tests/main.swift -o build/tests/unittests
+  exec build/tests/unittests
 fi
 
 rm -rf "$APP"

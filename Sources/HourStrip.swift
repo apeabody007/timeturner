@@ -6,31 +6,6 @@ import AppKit
 // bad at. It reuses the vocabulary the glass established: done *, running o,
 // still to come ., and break sand ~.
 
-/// True for the minutes the pomodoro grid gives to a break, :25 to :30 and
-/// :55 to :00. Off the grid there are no breaks, so the whole hour is work.
-func isBreakMinute(_ minute: Int) -> Bool {
-    guard pomodoro else { return false }
-    return (25..<30).contains(minute) || minute >= 55
-}
-
-/// Which minute of the hour we are in, 0 through 59. Demo mode squeezes the
-/// hour into thirty seconds, and this rides along with it because it measures
-/// the same fraction the glass drains by.
-func currentMinute(_ date: Date = Date()) -> Int {
-    let intoHour = localSeconds(date).truncatingRemainder(dividingBy: period) / period
-    return min(59, max(0, Int(intoHour * 60)))
-}
-
-/// One character per minute of the hour.
-func hourGlyphs(_ date: Date = Date()) -> [Character] {
-    let now = currentMinute(date)
-    return (0..<60).map { minute in
-        if minute == now { return "o" }
-        if minute < now { return isBreakMinute(minute) ? "-" : "*" }
-        return isBreakMinute(minute) ? "~" : "."
-    }
-}
-
 /// Sits invisibly over the status item's button and reports the pointer
 /// crossing it. `.activeAlways` is the part that matters: without it the
 /// tracking area only fires while TimeTurner is frontmost, which it never is.

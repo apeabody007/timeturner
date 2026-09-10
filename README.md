@@ -110,6 +110,19 @@ Turn on **Launch at Login** from the menu if you want it to always be there.
 Note that a local build ad-hoc signs, so macOS may ask you to approve it the
 first time.
 
+## Tests
+
+```
+./build.sh test
+```
+
+The clock lives in `Sources/Clock.swift`, apart from everything that draws,
+and it is nothing but arithmetic over a date. That is what lets the suite walk
+a whole hour in milliseconds instead of waiting one out: every boundary of the
+pomodoro grid, the fraction each slot has drained, the cycle number that makes
+the glass turn, and the sixty characters the hover panel is made of. CI runs
+them on every push, then builds the app and renders the icon frames headless.
+
 ## Watch it turn without waiting an hour
 
 ```
