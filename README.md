@@ -31,7 +31,7 @@ There are two views of the same hour:
 
 Nobody starts a pomodoro here. Turn on **Pomodoro Mode** and the hour
 becomes the classic grid: 25 minutes of work, 5 of break, twice per hour,
-turning at :00, :25, :30 and :55. Because 25 + 5 + 25 + 5 is exactly 60,
+turning at `:00`, `:25`, `:30` and `:55`. Because 25 + 5 + 25 + 5 is exactly 60,
 the grid anchors to the clock like everything else here. It runs whether
 you are at your desk or not, and everyone running TimeTurner anywhere on
 earth is in the same slot right now. There is no timer to set, no state to
@@ -148,6 +148,28 @@ drain and the glass turn over.
   new glass allows, then the simulation settles the rest.
 - The state is derived from the current time, so the hourly turn, waking
   from sleep, and a resize can all reseat the glass and it is never wrong.
+
+## Copilot
+
+The hour is small enough to fit in a prompt, if you tell Copilot the rules
+first. This repo ships those rules so the Copilot app and Copilot CLI stay
+inside the glass instead of inventing a start button.
+
+- [`.github/copilot-instructions.md`](.github/copilot-instructions.md) — the
+  hour, the file map, and the constraints.
+- [`.github/agents/sandkeeper.agent.md`](.github/agents/sandkeeper.agent.md) —
+  a custom agent that keeps clock math in `Clock.swift` and cycle numbers
+  honest.
+- [`.github/skills/turn-the-glass/`](.github/skills/turn-the-glass/) — build,
+  test, `--demo`, and `--render` from the CLI.
+
+In Copilot CLI, from the clone:
+
+```
+copilot --agent sandkeeper
+```
+
+Then ask it to turn the glass. `./build.sh test` is how you know it did.
 
 ## License
 
