@@ -7,7 +7,7 @@ set -euo pipefail
 
 NAME="TimeTurner"
 BUNDLE_ID="dev.aaronpeabody.timeturner"
-VERSION="${VERSION:-1.6}"   # scripts/release.sh passes the release version in
+VERSION="${VERSION:-1.7}"   # scripts/release.sh passes the release version in
 
 cd "$(dirname "$0")"
 APP="build/$NAME.app"
